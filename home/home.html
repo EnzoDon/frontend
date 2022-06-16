@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <script src="https://kit.fontawesome.com/9eb45967b7.js"></script>
+
+        <link rel="stylesheet" href="./home.css">
+
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css"
+            integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ=="
+            crossorigin=""
+        />
+        
+    </head>
+    <body>
+        <div id="root">
+            <!-- component header -->
+            <header id="header">
+                <div class="logo-wrap">
+                    <div id="logo">COMØ</div>
+                </div>
+                <div class="nav-wrap">
+                    <button class="nav">
+                        Home
+                    </button>
+                    <button class="nav">
+                        Guaraní
+                    </button>
+                    <button class="nav">
+                        Carreras
+                    </button>
+                    <button class="nav">
+                        Preguntas Frecuentes
+                    </button>
+                    <button class="nav">
+                        Contacto
+                    </button>
+                </div>
+                <button class="btn-icon">
+                    <i class="fa-solid fa-bars" id="menu-icon"></i>
+                </button>
+            </header>
+            <main id="main">
+                <div id="sidebar">
+                    <div id="mapid"></div>
+                </div>
+                <section>
+                    <div class="section-header">
+                        <h2>Noticias</h2>
+                        <div class="search">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </div>
+                    </div>
+    
+                </section>
+
+            </main>
+
+            
+            
+            
+        </div>
+    </body>
+
+    <script>
+        //draw leaflet map
+        function drawMap(initialCoors, zoom) {
+            // Creating the map at the user location
+            var mymap = L.map('mapid').setView(initialCoors, zoom);
+
+            // Adding the map draw from Open Street Map
+            L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+                attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+            }).addTo(mymap);
+            // draw the markers
+        }
+
+        
+        // Promise for geolocation callback with the location the error loads the map in a foo position
+        navigator.geolocation.getCurrentPosition(
+            position => drawMap([position.coords.latitude, position.coords.longitude], 16),
+            () => drawMap([-27.47, -58.833], 14.83) 
+        );
+    </script>
+    <script>
+        //set sidebar dynamic height
+        var renderedMap = document.getElementById('sidebar');
+        var renderedHeader= document.getElementById('header');
+        var vh = document.getElementById('root').clientHeight;
+        console.log('vh\t' + vh)
+        console.log('renderedHeader.clientHeight\t' + renderedHeader.clientHeight)
+        console.log('vh - renderedHeader.clientHeight\t' + (vh - renderedHeader.clientHeight))
+        renderedMap.style.height = (vh - renderedHeader.clientHeight) + 'px';
+    </script>
+
+
+
+    <script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js" integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ==" crossorigin=""></script>
+</html>
