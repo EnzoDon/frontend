@@ -4,11 +4,11 @@ Gente puse uma organizacion de archivos para que todos puedan trabajar en el mis
 Intenten dejar sus paginas siempre adentro de la carpeta que estan criando
 
 
-## Pages TODO:
+### Pages TODO:
 
-    -   [ ]   Dario (y compas): Guía Guaraní
-    -   [ ]   Enzo (y compas): Guia Carreras
-    -   [ ]   Douglas (y compas): Home
+- [ ] Dario (y compas): Guía Guaraní
+- [ ] Enzo (y compas): Guia Carreras
+- [ ] Douglas (y compas): Home
 
 La idea es intentar mantener la misma estructura que esta en el [figma](https://www.figma.com/file/T1mhPOGDN0s0xhyORR0A7r/COMO?node-id=0%3A1)
 
