@@ -1,3 +1,4 @@
+![Logo](./assets/logo.jpeg?raw=true "COMO")
 # COMO
 
 Gente puse uma organizacion de archivos para que todos puedan trabajar en el mismo repo
