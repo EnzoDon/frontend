@@ -1,4 +1,4 @@
-# ![Logo](./assets/logo.jpeg?raw=true "COMO")
+# ![Logo](./assets/banner.jpeg?raw=true "COMO")
 
 Gente puse uma organizacion de archivos para que todos puedan trabajar en el mismo repo
 Intenten dejar sus paginas siempre adentro de la carpeta que estan criando
