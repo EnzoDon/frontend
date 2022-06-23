@@ -11,8 +11,419 @@
         <title>Guía Carreras</title>
     </head>
     <body>
-        <!-- CHICOS ACÁ SUBAN EL HTML PARA LA PAGINA DE GUIA CARRERAS
-                YA DEJÉ LINKEADO UN CSS CON MISMO NOMBRE
-        -->
+        <div id="root">
+            <!-- component header -->
+            <header id="header">
+                <div class="logo-wrap">
+                    <div id="logo">COMØ</div>
+                </div>
+                <div class="nav-wrap">
+                    <button class="nav">
+                        Home
+                    </button>
+                    <button class="nav">
+                        Guaraní
+                    </button>
+                    <button class="nav">
+                        Carreras
+                    </button>
+                    <button class="nav">
+                        Preguntas Frecuentes
+                    </button>
+                </div>
+                <!-- <button class="btn-icon">
+                    <i class="fa-solid fa-bars" id="menu-icon"></i>
+                </button> -->
+            </header>
+            <main id="main">
+                <div id="sidebar">
+                </div>
+                <section>
+                    <div class="section-header">
+                        <p>La facultad de Ciencias Exactas, Fisicas y Naturales cuenta con 16 carreras de grado.<p>
+                    </div>
+                    <div class = "section-content">
+                        <!--Seccion ingenieria industrial-->
+                        <button id = "bt_ing_inds">
+                            Ingeniería Industrial
+                        </button>
+                        <div class = text-content id="ing_ind_cont">
+                            <p>
+                                El Ingeniero Industrial cubre las actividades de producción de bienes y servicios, relacionando principios de la tecnología y la organización, para hacer más eficiente los sistemas productivos. 
+                                <br>El Ingeniero Industrial es un profesional estrechamente relacionado con la creación del producto. 
+                                <br>Posee competencia para diseñar, proyectar y planificar operaciones, procesos e instalaciones para la obtención de bienes industrializados y la ejecución de servicios. Dirigir su operación y mantenimiento y certificar su aptitud.
+                                <br>Links útiles:
+                            </p>
+                            <ul>
+                                <li><a href="https://www.fcefyn.unc.edu.ar/facultad/secretarias/academica/escuelas/ingenieria-industrial/ingenieria-industrial/">Pagina ingeniería industrial</a></li>
+                                <li><a href="https://www.fcefyn.unc.edu.ar/facultad/secretarias/academica/escuelas/ingenieria-industrial/">Pagina de la escuela de ingeniería industrial</a></li>
+                            </ul>
+                        </div>
+                        
+                        <!--Seccion ingenieria en computación-->
+                        <button id = "bt_ing_comp">
+                            Ingeniería en Computación
+                        </button>
+                        <div class = text-content id="ing_comp_cont">
+                            <p>
+                                Quienes estudian esta carrera se dedican al diseño de sistemas de hardware digital, incluyendo los sistemas de comunicaciones, equipos y dispositivos que componen los sistemas de computación.
+                                <br>Por otra parte, se dedican también al diseño e implementación de software, enfocándose en aplicaciones para dispositivos digitales y sus interfaces con usuarios y otros dispositivos.
+                                <br>Links utiles:
+                            </p>
+                            <ul>
+                                <li><a href="https://fcefyn.unc.edu.ar/facultad/secretarias/academica/escuelas/ingenieria-computacion/ingenieria-en-computacion/">Pagina ingeniería en computación</a></li>
+                                <li><a href="https://fcefyn.unc.edu.ar/facultad/secretarias/academica/escuelas/ingenieria-computacion/">Pagina de la escuela de ingeniería en computación</a></li>
+                            </ul>
+                        </div>
+
+                        <!--Seccion profesorado en ciencias biologicas-->
+                        <button id = "bt_prof_biol">
+                            Profesorado en ciencias biologicas
+                        </button>
+                        <div class = text-content id="prof_biol_cont">
+                            <p>
+                                El Profesorado permite al egresado desarrollarse como docente del nivel secundario y superior del sistema educativo en el área de las Ciencias Biológicas. 
+                                <br>Como titulación supletoria, se habilita a la enseñanza en otras Ciencias Naturales, como Química, Educación Ambiental, Educación para la Salud. 
+                                <br>También puede desarrollarse en el área de la Didáctica de las Ciencias Naturales.
+                                <br>Links útiles:
+                            </p>
+                            <ul>
+                                <li><a href="https://fcefyn.unc.edu.ar/facultad/secretarias/academica/escuelas/biologia/prof-cs-biologicas/">Pagina profesorado en ciencias biologicas</a></li>
+                                <li><a href="https://fcefyn.unc.edu.ar/facultad/secretarias/academica/escuelas/biologia/">Pagina de la escuela de biologia</a></li>
+                            </ul>
+                        </div>
+
+                        <!--Seccion ciencias biologicas-->
+                        <button id = "bt_cien_biol">
+                            Ciencias biologicas
+                        </button>
+                        <div class = text-content id="cien_biol_cont">
+                            <p>
+                                El biólogo es un profesional capacitado para ejecutar acciones destinadas a: evaluación, manejo, control, protección de los ecosistemas urbanos, rurales y recursos naturales. 
+                                <br>Administrar áreas naturales protegidas. 
+                                <br>Realizar estudios e implementaciones de control de organismo plaga, vectores o reservorios de enfermedades. 
+                                <br>Ejecutar todo tipo de acción destinada a la cría, producción, desarrollo y mejoramiento genético de especies de la flora y fauna. 
+                                <br>Enseñar la especialidad en todos los ciclos del sistema educativo nacional. 
+                                <br>Realizar investigaciones básicas y aplicadas sobre los organismos y su ambiente.
+                                <br>Links útiles:
+                            </p>
+                            <ul>
+                                <li><a href="https://fcefyn.unc.edu.ar/facultad/secretarias/academica/escuelas/biologia/cs-biologicas/">Pagina de ciencias biologicas</a></li>
+                                <li><a href="https://fcefyn.unc.edu.ar/facultad/secretarias/academica/escuelas/biologia/">Pagina de la escuela de biologia</a></li>
+                            </ul>
+                        </div>
+
+                        <!--Seccion ciencias geologicas-->
+                        <button id = "bt_cien_geo">
+                            Ciencias geologicas
+                        </button>
+                        <div class = text-content id="cien_geo_cont">
+                            <p>
+                                El Geólogo es un profesional capaz de: Identificar y caracterizar minerales; reconocer la composición y ambientes de formación de minerales y rocas, y conocer sus aplicaciones y usos. 
+                                <br>Conocer las técnicas básicas de estudio de fósiles e investigar los yacimientos paleontológicos para su uso y conservación
+                                <br>Medición del tiempo geológico, reconocer grados metamórficos, series magmáticas, y facies sedimentarias y los procesos de formación
+                                <br>Identificar suelos y su origen, planificar y aplicar estrategias de conservación de los suelos
+                                <br>Reconocer ambientes y procesos geomorfológicos, realizar mapas geomorfológicos, reconocer estructuras geológicas y su origen
+                                <br>Integrar conceptos y procesos geológicos y comprender su evolución en el tiempo, comprender la evolución de continentes, mares y atmósfera
+                                <br>Aplicar los conocimientos geológicos a la demanda social de recursos naturales, seleccionar y utilizar los métodos de exploración, evaluación, extracción y de gestión de los recursos no renovables y el agua
+                                <br>Reconocer la génesis de los yacimientos minerales, prevenir y mitigar los riesgos geológicos, desastres naturales y antrópicos
+                                <br>Recoger y analizar datos utilizando las técnicas adecuadas de campo y laboratorio, entre otras cosas.
+                                <br>Links utiles:
+                            </p>
+                            <ul>
+                                <li><a href="https://fcefyn.unc.edu.ar/facultad/secretarias/academica/escuelas/escuela-de-geologia/ciencias-geologicas/">Pagina de ciencias geologicas</a></li>
+                                <li><a href="https://fcefyn.unc.edu.ar/facultad/secretarias/academica/escuelas/escuela-de-geologia/">Pagina de la escuela de geologia</a></li>
+                            </ul>
+                        </div>
+                        
+
+                        <!--Seccion Ingeniería en agrimensura-->
+                        <button id = "bt_ing_agr">
+                            Ingeniería en agrimensura
+                        </button>
+                        <div class = text-content id="ing_agr_cont">
+                            <p>
+                                La Agrimensura es un distintivo campo del saber que trabaja sobre la relación del hombre con la tierra. 
+                                <br>Antes de nacer cada pueblo, o crecer cada ciudad, alguien tiene que delimitar la tierra. 
+                                <br>Comprende la medición y la valuación de la propiedad territorial, ya sea pública o privada, urbana o rural, tanto en la superficie como en la profundidad.
+                                <br>Links utiles:
+                            </p>
+                            <ul>
+                                <li><a href="https://fcefyn.unc.edu.ar/facultad/secretarias/academica/escuelas/escuela-agrimensura/ingenieria-en-agrimensura/">Pagina de ingenieria en agrimensura</a></li>
+                            </ul>
+                        </div>
+
+                        <!--Seccion Ingeniería aeronáutica-->
+                        <button id = "bt_ing_aer">
+                            Ingeniería aeronáutica
+                        </button>
+                        <div class = text-content id="ing_aer_cont">
+                            <p>
+                                Los ingenieros aeronáuticos estudian, proyectan, calculan y dirigen la construcción de aeronaves (aviones, helicópteros, cohetes, toda máquina de vuelo y vehículos espaciales), verificando en laboratorios de investigación aerodinámica y de ensayo de estructuras con modelos a escala, para lograr un diseño seguro. 
+                                <br>Se enfocan, desde la concepción del proyecto, al mantenimiento y la reparación de naves de vuelo. 
+                                <br>Estudian y proyectan aeropuertos para la operación segura de aeronaves, y la circulación de bienes y personas en sus instalaciones.
+                                <br>Links utiles:
+                            </p>
+                            <ul>
+                                <li><a href="https://fcefyn.unc.edu.ar/facultad/secretarias/academica/escuelas/escuela-de-ingenieria-mecanica-aeronautica/ingenieria-aeronautica/">Pagina de ingenieria aeronautica</a></li>
+                                <li><a href="https://fcefyn.unc.edu.ar/facultad/secretarias/academica/escuelas/escuela-de-ingenieria-mecanica-aeronautica/">Pagina de la escuela de ingenieria aeronautica</a></li>
+                            </ul>
+                        </div>
+
+
+                        <!--Seccion Ingeniería biomédica-->
+                        <button id = "bt_ing_bio">
+                            Ingeniería biomédica
+                        </button>
+                        <div class = text-content id="ing_bio_cont">
+                            <p>
+                                Egresando de nuestra carrera estarás capacitada/o para: Diseñar y utilizar instrumental de alta complejidad tecnológica en el campo de la biología en general y de la medicina en particular, así como asesorar sobre la necesidad de su utilización. 
+                                <br>Aplicar la metodología de investigación científica a la realización de estudios en el ámbito de su competencia. 
+                                <br>Intervenir en la creación de condiciones de asepsia y seguridad mediante la aplicación de equipos de medición y radiación. 
+                                <br>Obtener datos necesarios para el diagnóstico de sistemas biológicos mediante procedimientos electrónicos, mecánicos, acústicos y ópticos. 
+                                <br>Desarrollar, construir y evaluar dispositivos de ayuda a discapacidades. 
+                                <br>Estudiar sistemas biológicos a los fines de desarrollar aplicaciones tecnológicas.
+                                <br>Links utiles:
+                            </p>
+                            <ul>
+                                <li><a href="https://fcefyn.unc.edu.ar/facultad/secretarias/academica/escuelas/ingenieria-biomedica/ingenieria-biomedica/">Pagina de ingenieria biomedica</a></li>
+                                <li><a href="https://fcefyn.unc.edu.ar/facultad/secretarias/academica/escuelas/ingenieria-biomedica/">Pagina de la escuela de ingenieria biomedica</a></li>
+                            </ul>
+                        </div>
+
+
+                        <!--Seccion Constructor-->
+                        <button id = "bt_cons">
+                            Constructor
+                        </button>
+                        <div class = text-content id="cons_cont">
+                            <p>
+                                El profesional Constructor es capaz de satisfacer íntegramente las demandas actuales de la construcción, ya que posee competencias y capacidades para resolver todos los aspectos de una obra de arquitectura. 
+                                <br>El egresado puede diseñar viviendas y edificios, brindar soluciones de los sistemas constructivos tradicionales, diseñar y calcular estructuras portantes, otorgar solución a las instalaciones especiales de una obra, asesorar para la contratación en mano de obra y la compra de materiales necesarios para la realización de la misma, conducir, organizar, dirigir y administrar una obra.
+                                <br>Asesorar en el mantenimiento de edificios, elaborar informes técnicos relativos a las edificaciones y sus instalaciones, realizar peritajes, ejercer como docentes.
+                                <br>Links utiles:
+                            </p>
+                            <ul>
+                                <li><a href="https://fcefyn.unc.edu.ar/facultad/secretarias/academica/escuelas/escuela-de-ingenieria-civil/constructor/">Pagina de constructor</a></li>
+                                <li><a href="https://fcefyn.unc.edu.ar/facultad/secretarias/academica/escuelas/escuela-de-ingenieria-civil/">Pagina de la escuela de ingenieria civil</a></li>
+                            </ul>
+                        </div>
+
+
+                        <!--Seccion Ingeniería ambiental-->
+                        <button id = "bt_ing_amb">
+                            Ingeniería ambiental
+                        </button>
+                        <div class = text-content id="ing_amb_cont">
+                            <p>
+                                El Ingeniero Ambiental proyecta, dirige y supervisa la construcción y mantenimiento de obras destinadas a evitar la contaminación ambiental producida por efluentes originados por las industrias y sus servicios derivados. 
+                                <br>Desarrolla obras de aprovechamiento de los recursos naturales, obras de regulación, captación, y abastecimiento de agua. Investiga y desarrolla procesos tecnológicos para la recuperación y reciclaje de residuos urbanos, industriales, mineros y agropecuarios para su integración al medio ambiente. 
+                                <br>Realiza estudios y asesora acerca de la polución y contaminación del agua, del suelo y del aire, y explotación, manejo y recuperación de recursos naturales. 
+                                <br>Reconoce, interpreta y diagnostica impactos ambientales.
+                                <br>Links utiles:
+                            </p>
+                            <ul>
+                                <li><a href="https://fcefyn.unc.edu.ar/facultad/secretarias/academica/escuelas/escuela-de-ingenieria-civil/ingenieria-ambiental/">Pagina de ingeniería ambiental</a></li>
+                                <li><a href="https://fcefyn.unc.edu.ar/facultad/secretarias/academica/escuelas/escuela-de-ingenieria-civil/">Pagina de la escuela de ingenieria civil</a></li>
+                            </ul>
+                        </div>
+
+                        <!--Seccion Ingeniería civil-->
+                        <button id = "bt_ing_civ">
+                            Ingeniería civil
+                        </button>
+                        <div class = text-content id="ing_civ_cont">
+                            <p>
+                                El Ingeniero Civil se encarga del diseño, construcción y mantenimiento de las infraestructuras emplazadas en el entorno, incluyendo carreteras, ferrocarriles, puentes, canales, presas, puertos, aeropuertos, diques y otras construcciones relacionadas. <br> Concibe, proyecta, construye y mantiene las obras del bien público (edificios, vías de comunicación, puentes, centrales hidroeléctricas, acueductos, desagües, plantas potabilizadoras y de tratamiento de líquidos, etc.) <br>Links utiles:
+                            </p>
+                            <ul>
+                                <li><a href="https://fcefyn.unc.edu.ar/facultad/secretarias/academica/escuelas/escuela-de-ingenieria-civil/ingenieria-civil/">Pagina de ingeniería civil</a></li>
+                                <li><a href="https://fcefyn.unc.edu.ar/facultad/secretarias/academica/escuelas/escuela-de-ingenieria-civil/">Pagina de la escuela de ingenieria civil</a></li>
+                            </ul>
+                        </div>
+
+                        <!--Seccion Ingeniería electrónica-->
+                        <button id = "bt_ing_ele">
+                            Ingeniería electrónica
+                        </button>
+                        <div class = text-content id="ing_ele_cont">
+                            <p>
+                                Los ingenieros electrónicos, aparte del desarrollo de circuitos y sistemas electrónicos, nos dedicamos a brindar soluciones para un sinnúmero de aplicaciones en la industria ya que casi todos los procesos de fabricación se encuentran automatizados y controlados por sistemas electrónicos. <br>Asimismo pasa en muchos ámbitos, como las comunicaciones, la salud, etc, donde la electrónica está altamente presente. <br>Links utiles:                            </p>
+                            <ul>
+                                <li><a href="https://fcefyn.unc.edu.ar/facultad/secretarias/academica/escuelas/escuela-de-ingenieria-electronica/ingenieria-electronica/">Pagina de ingeniería electronica</a></li>
+                                <li><a href="https://fcefyn.unc.edu.ar/facultad/secretarias/academica/escuelas/escuela-de-ingenieria-electronica/">Pagina de la escuela de ingenieria electronica</a></li>
+                            </ul>
+                        </div>
+
+                        <!--Seccion Ingenieria mecánica-->
+                        <button id = "bt_ing_mec">
+                            Ingenieria mecánica
+                        </button>
+                        <div class = text-content id="ing_mec_cont">
+                            <p>
+                                Si estudias Ingeniería Mecánica,  podés diseñar, calcular y proyectar máquinas, instalaciones y sistemas mecánicos térmicos y de fluidos mecánicos, o partes con estas características incluidos los sistemas destinados a la generación transformación, regulación, conducción y aplicación de la energía mecánica; proyectar motores, máquinas y otros productos que son necesarios para la industria mecánica, como así también realizar el control de la fabricación, del funcionamiento y reparación de máquinas. <br>Entre las máquinas y herramientas que el ingeniero mecánico diseña, calcula, construye, mantiene o repara, se encuentran las máquinas agrícolas, equipos en la industria de manufactura, las grúas, las herramientas de mano, etc. <br>También tienen a su cargo la construcción de motores de combustión interna tales como motores de gasolina o gas, o motores diésel. <br>Links utiles:                            
+                            </p>
+                            <ul>
+                                <li><a href="https://fcefyn.unc.edu.ar/facultad/secretarias/academica/escuelas/escuela-de-ingenieria-mecanica-electricista/ingenieria-mecanica/">Pagina de ingeniería mecanica</a></li>
+                                <li><a href="https://fcefyn.unc.edu.ar/facultad/secretarias/academica/escuelas/escuela-de-ingenieria-mecanica-electricista/">Pagina de la escuela de ingenieria mecanica electricista</a></li>
+                            </ul>
+                        </div>
+
+                        <!--Seccion Ingenieria electromecánica-->
+                        <button id = "bt_ing_emec">
+                            Ingenieria electromecánica
+                        </button>
+                        <div class = text-content id="ing_emec_cont">
+                            <p>
+                                Si estudiás Ingeniería Electromecánica podes realizar tareas de ingeniería en plantas de generación y transformación de la energía, estaciones transformadoras, sistemas de transmisión y distribución de líneas de alta, media y baja tensión, instalaciones eléctricas de edificios, locales comerciales y fábricas, sistemas de control y automatización; construcción de máquinas eléctricas, elementos y equipos eléctricos en general. <br> También vas a poder diseñar, calcular y proyectar máquinas, instalaciones y sistemas mecánicos térmicos y de fluidos mecánicos, mantenimiento y reparaciones de maquinarias en general: estudio y diseño de sistemas de interconexión entre motores, estudio de generadores y transformadores, construcción y adaptación de motores, diseño de motores de combustión térmica, reforma y adaptación de los mismos y sistemas de aire acondicionado. <br>Links utiles:
+                            </p>
+                            <ul>
+                                <li><a href="https://fcefyn.unc.edu.ar/facultad/secretarias/academica/escuelas/escuela-de-ingenieria-mecanica-electricista/ingenieria-electromecanica/">Pagina de ingeniería electromecanica</a></li>
+                                <li><a href="https://fcefyn.unc.edu.ar/facultad/secretarias/academica/escuelas/escuela-de-ingenieria-mecanica-electricista/">Pagina de la escuela de ingenieria mecanica electricista</a></li>
+                            </ul>
+                        </div>
+
+
+                        <!--Seccion Ingenieria química-->
+                        <button id = "bt_ing_quim">
+                            Ingenieria química
+                        </button>
+                        <div class = text-content id="ing_quim_cont">
+                            <p>
+                                El ingeniero químico actúa en un campo de acción muy amplio, por ejemplo, trabajar en diversas industrias químicas, tener la propia planta elaboradora de algún producto, investigar y producir nuevos materiales, conducir empresas en nuestro país y en el exterior, entre otras actividades. <br>Links utiles:
+                            </p>
+                            <ul>
+                                <li><a href="https://fcefyn.unc.edu.ar/facultad/secretarias/academica/escuelas/escuela-de-ingenieria-quimica/ingenieria-quimica/">Pagina de ingeniería quimica</a></li>
+                                <li><a href="http://www.esc.quimica.efn.uncor.edu/">Pagina de la escuela de ingenieria quimica</a></li>
+                            </ul>
+                        </div>
+
+                         <!--Seccion Técnico mecánico electricista-->
+                         <button id = "bt_tec_mec">
+                            Técnico mecánico electricista
+                        </button>
+                        <div class = text-content id="tec_mec_cont">
+                            <p>
+                                La carrera se cursa en la Facultad de Ciencias Exactas, Físicas y Naturales de la UNC, comprende 21 asignaturas cuyos contenidos curriculares se distribuyen en 3 del ciclo de nivelación, 6 anuales en el primer año, 6 anuales en el segundo año y 6 anuales en el tercer año. <br>Link utiles:
+                            </p>
+                            <ul>
+                                <li><a href="https://fcefyn.unc.edu.ar/facultad/secretarias/academica/escuelas/escuela-de-ingenieria-mecanica-electricista/tecnico-mecanico-electricista/">Pagina de tecnico mecanico electricista</a></li>
+                                <li><a href="https://fcefyn.unc.edu.ar/facultad/secretarias/academica/escuelas/escuela-de-ingenieria-mecanica-electricista/">Pagina de la escuela de tecnico mecanico electricista</a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+    
+                </section>
+
+            </main>
+        </div>
     </body>
+
+    <script type="text/javascript">  
+        //Script ingenieria industrial
+        document.getElementById("bt_ing_inds").onclick = function() {
+            show_text("bt_ing_inds","ing_ind_cont");
+        }
+
+        //Script ingenieria en computacion
+        document.getElementById("bt_ing_comp").onclick = function() {
+            show_text("bt_ing_comp","ing_comp_cont");
+        }
+
+        //Script profesorado en ciencias biologicas
+        document.getElementById("bt_prof_biol").onclick = function() {
+            show_text("bt_prof_biol","prof_biol_cont");
+        }
+
+        //Script ciencias biologicas
+        document.getElementById("bt_cien_biol").onclick = function() {
+            show_text("bt_cien_biol","cien_biol_cont");
+        }
+
+        //Script ciencias geologicas
+        document.getElementById("bt_cien_geo").onclick = function() {
+            show_text("bt_cien_geo","cien_geo_cont");
+        }
+
+        //Script ingenieria en agrimensura
+        document.getElementById("bt_ing_agr").onclick = function() {
+            show_text("bt_ing_agr","ing_agr_cont");
+        }
+
+        //Script ingenieria aeronautica
+        document.getElementById("bt_ing_aer").onclick = function() {
+            show_text("bt_ing_aer","ing_aer_cont");
+        }
+        
+        //Script ingenieria biomedica
+        document.getElementById("bt_ing_bio").onclick = function() {
+            show_text("bt_ing_bio","ing_bio_cont");
+        }
+
+        //Script constructor
+        document.getElementById("bt_cons").onclick = function() {
+            show_text("bt_cons","cons_cont");
+        }
+
+        //Script Ingenieria ambiental
+        document.getElementById("bt_ing_amb").onclick = function() {
+            show_text("bt_ing_amb","ing_amb_cont");
+        }
+
+        //Script Ingenieria civil
+        document.getElementById("bt_ing_civ").onclick = function() {
+            show_text("bt_ing_civ","ing_civ_cont");
+        }
+
+        //Script Ingenieria electronica
+        document.getElementById("bt_ing_ele").onclick = function() {
+            show_text("bt_ing_ele","ing_ele_cont");
+        }
+
+        //Script Ingenieria mecanica
+        document.getElementById("bt_ing_mec").onclick = function() {
+            show_text("bt_ing_mec","ing_mec_cont");
+        }
+
+        //Script Ingenieria electromecanica
+        document.getElementById("bt_ing_emec").onclick = function() {
+            show_text("bt_ing_emec","ing_emec_cont");
+        }
+
+        //Script Ingenieria quimica
+        document.getElementById("bt_ing_quim").onclick = function() {
+            show_text("bt_ing_quim","ing_quim_cont");
+        }
+
+        //Script Tecnico mecanico electricista
+        document.getElementById("bt_tec_mec").onclick = function() {
+            show_text("bt_tec_mec","tec_mec_cont");
+        }
+
+
+        function show_text(bt_id, comp_id){
+            var x = document.getElementById(comp_id)
+            if (window.getComputedStyle(x).display === "none") {
+                x.style.display = "inline-block"
+                document.getElementById(bt_id).style.borderBottomWidth = "0px"
+                document.getElementById(bt_id).style.borderBottomLeftRadius = "0px";
+                document.getElementById(bt_id).style.borderBottomRightRadius = "0px";
+            }else{
+                x.style.display = "none"
+                document.getElementById(bt_id).style.borderBottomWidth = "1px"
+                document.getElementById(bt_id).style.borderBottomLeftRadius = "3px";
+                document.getElementById(bt_id).style.borderBottomRightRadius = "3px";
+            }
+        }
+
+    </script>
+
+
+
+
+
+
+
+
 </html>
