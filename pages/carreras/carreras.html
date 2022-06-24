@@ -36,15 +36,13 @@
                 </button> -->
             </header>
             <main id="main">
-                <div id="sidebar">
-                </div>
                 <section>
                     <div class="section-header">
                         <p>La facultad de Ciencias Exactas, Fisicas y Naturales cuenta con 16 carreras de grado.<p>
                     </div>
                     <div class = "section-content">
                         <!--Seccion ingenieria industrial-->
-                        <button id = "bt_ing_inds">
+                        <button class= bt_cont id = "bt_ing_inds">
                             Ingeniería Industrial
                         </button>
                         <div class = text-content id="ing_ind_cont">
@@ -61,7 +59,7 @@
                         </div>
                         
                         <!--Seccion ingenieria en computación-->
-                        <button id = "bt_ing_comp">
+                        <button class= bt_cont id = "bt_ing_comp">
                             Ingeniería en Computación
                         </button>
                         <div class = text-content id="ing_comp_cont">
@@ -77,7 +75,7 @@
                         </div>
 
                         <!--Seccion profesorado en ciencias biologicas-->
-                        <button id = "bt_prof_biol">
+                        <button class= bt_cont id = "bt_prof_biol">
                             Profesorado en ciencias biologicas
                         </button>
                         <div class = text-content id="prof_biol_cont">
@@ -94,7 +92,7 @@
                         </div>
 
                         <!--Seccion ciencias biologicas-->
-                        <button id = "bt_cien_biol">
+                        <button class= bt_cont id = "bt_cien_biol">
                             Ciencias biologicas
                         </button>
                         <div class = text-content id="cien_biol_cont">
@@ -114,7 +112,7 @@
                         </div>
 
                         <!--Seccion ciencias geologicas-->
-                        <button id = "bt_cien_geo">
+                        <button class= bt_cont id = "bt_cien_geo">
                             Ciencias geologicas
                         </button>
                         <div class = text-content id="cien_geo_cont">
@@ -138,7 +136,7 @@
                         
 
                         <!--Seccion Ingeniería en agrimensura-->
-                        <button id = "bt_ing_agr">
+                        <button class= bt_cont id = "bt_ing_agr">
                             Ingeniería en agrimensura
                         </button>
                         <div class = text-content id="ing_agr_cont">
@@ -154,7 +152,7 @@
                         </div>
 
                         <!--Seccion Ingeniería aeronáutica-->
-                        <button id = "bt_ing_aer">
+                        <button class= bt_cont id = "bt_ing_aer">
                             Ingeniería aeronáutica
                         </button>
                         <div class = text-content id="ing_aer_cont">
@@ -172,7 +170,7 @@
 
 
                         <!--Seccion Ingeniería biomédica-->
-                        <button id = "bt_ing_bio">
+                        <button class= bt_cont id = "bt_ing_bio">
                             Ingeniería biomédica
                         </button>
                         <div class = text-content id="ing_bio_cont">
@@ -193,7 +191,7 @@
 
 
                         <!--Seccion Constructor-->
-                        <button id = "bt_cons">
+                        <button class= bt_cont id = "bt_cons">
                             Constructor
                         </button>
                         <div class = text-content id="cons_cont">
@@ -211,7 +209,7 @@
 
 
                         <!--Seccion Ingeniería ambiental-->
-                        <button id = "bt_ing_amb">
+                        <button class= bt_cont id = "bt_ing_amb">
                             Ingeniería ambiental
                         </button>
                         <div class = text-content id="ing_amb_cont">
@@ -229,7 +227,7 @@
                         </div>
 
                         <!--Seccion Ingeniería civil-->
-                        <button id = "bt_ing_civ">
+                        <button class= bt_cont id = "bt_ing_civ">
                             Ingeniería civil
                         </button>
                         <div class = text-content id="ing_civ_cont">
@@ -243,7 +241,7 @@
                         </div>
 
                         <!--Seccion Ingeniería electrónica-->
-                        <button id = "bt_ing_ele">
+                        <button class= bt_cont id = "bt_ing_ele">
                             Ingeniería electrónica
                         </button>
                         <div class = text-content id="ing_ele_cont">
@@ -256,7 +254,7 @@
                         </div>
 
                         <!--Seccion Ingenieria mecánica-->
-                        <button id = "bt_ing_mec">
+                        <button class= bt_cont id = "bt_ing_mec">
                             Ingenieria mecánica
                         </button>
                         <div class = text-content id="ing_mec_cont">
@@ -270,7 +268,7 @@
                         </div>
 
                         <!--Seccion Ingenieria electromecánica-->
-                        <button id = "bt_ing_emec">
+                        <button class= bt_cont id = "bt_ing_emec">
                             Ingenieria electromecánica
                         </button>
                         <div class = text-content id="ing_emec_cont">
@@ -285,7 +283,7 @@
 
 
                         <!--Seccion Ingenieria química-->
-                        <button id = "bt_ing_quim">
+                        <button class= bt_cont id = "bt_ing_quim">
                             Ingenieria química
                         </button>
                         <div class = text-content id="ing_quim_cont">
@@ -299,7 +297,7 @@
                         </div>
 
                          <!--Seccion Técnico mecánico electricista-->
-                         <button id = "bt_tec_mec">
+                         <button class= bt_cont id = "bt_tec_mec">
                             Técnico mecánico electricista
                         </button>
                         <div class = text-content id="tec_mec_cont">
@@ -313,8 +311,13 @@
                         </div>
 
                     </div>
-    
                 </section>
+                
+                <div id="sidebar">
+                    <img id = "imagen" src = "./images/fcefyn-logo.png">
+                </div>
+
+                
 
             </main>
         </div>
@@ -323,98 +326,117 @@
     <script type="text/javascript">  
         //Script ingenieria industrial
         document.getElementById("bt_ing_inds").onclick = function() {
-            show_text("bt_ing_inds","ing_ind_cont");
+            show_text("bt_ing_inds","ing_ind_cont", "./images/Ingenieria_industrial.jpg");
         }
 
         //Script ingenieria en computacion
         document.getElementById("bt_ing_comp").onclick = function() {
-            show_text("bt_ing_comp","ing_comp_cont");
+            show_text("bt_ing_comp","ing_comp_cont","./images/Ingenieria_en_computacion.jpg");
         }
 
         //Script profesorado en ciencias biologicas
         document.getElementById("bt_prof_biol").onclick = function() {
-            show_text("bt_prof_biol","prof_biol_cont");
+            show_text("bt_prof_biol","prof_biol_cont","./images/ProfesoradoCienciasBiologicas.png");
         }
 
         //Script ciencias biologicas
         document.getElementById("bt_cien_biol").onclick = function() {
-            show_text("bt_cien_biol","cien_biol_cont");
+            show_text("bt_cien_biol","cien_biol_cont","./images/CienciasBiologicas.png");
         }
 
         //Script ciencias geologicas
         document.getElementById("bt_cien_geo").onclick = function() {
-            show_text("bt_cien_geo","cien_geo_cont");
+            show_text("bt_cien_geo","cien_geo_cont","./images/CienciasGeologicas.png");
         }
 
         //Script ingenieria en agrimensura
         document.getElementById("bt_ing_agr").onclick = function() {
-            show_text("bt_ing_agr","ing_agr_cont");
+            show_text("bt_ing_agr","ing_agr_cont","./images/Ingenieria_en_agrimensura.png");
         }
 
         //Script ingenieria aeronautica
         document.getElementById("bt_ing_aer").onclick = function() {
-            show_text("bt_ing_aer","ing_aer_cont");
+            show_text("bt_ing_aer","ing_aer_cont","./images/Ingenieriaaeronautica.png");
         }
         
         //Script ingenieria biomedica
         document.getElementById("bt_ing_bio").onclick = function() {
-            show_text("bt_ing_bio","ing_bio_cont");
+            show_text("bt_ing_bio","ing_bio_cont","./images/Ingenieria_biomedica.jpg");
         }
 
         //Script constructor
         document.getElementById("bt_cons").onclick = function() {
-            show_text("bt_cons","cons_cont");
+            show_text("bt_cons","cons_cont","./images/Constructor.png");
         }
 
         //Script Ingenieria ambiental
         document.getElementById("bt_ing_amb").onclick = function() {
-            show_text("bt_ing_amb","ing_amb_cont");
+            show_text("bt_ing_amb","ing_amb_cont","./images/IngenieriaAmbiental.jpg");
         }
 
         //Script Ingenieria civil
         document.getElementById("bt_ing_civ").onclick = function() {
-            show_text("bt_ing_civ","ing_civ_cont");
+            show_text("bt_ing_civ","ing_civ_cont","./images/IngenieriaCivil.png");
         }
 
         //Script Ingenieria electronica
         document.getElementById("bt_ing_ele").onclick = function() {
-            show_text("bt_ing_ele","ing_ele_cont");
+            show_text("bt_ing_ele","ing_ele_cont","./images/IngenieriaElectronica.jpg");
         }
 
         //Script Ingenieria mecanica
         document.getElementById("bt_ing_mec").onclick = function() {
-            show_text("bt_ing_mec","ing_mec_cont");
+            show_text("bt_ing_mec","ing_mec_cont","./images/IngenieriaMecanica.png");
         }
 
         //Script Ingenieria electromecanica
         document.getElementById("bt_ing_emec").onclick = function() {
-            show_text("bt_ing_emec","ing_emec_cont");
+            show_text("bt_ing_emec","ing_emec_cont","./images/IngenieriaElectromecanica.png");
         }
 
         //Script Ingenieria quimica
         document.getElementById("bt_ing_quim").onclick = function() {
-            show_text("bt_ing_quim","ing_quim_cont");
+            show_text("bt_ing_quim","ing_quim_cont","./images/IngenieriaQuimica.png");
         }
 
         //Script Tecnico mecanico electricista
         document.getElementById("bt_tec_mec").onclick = function() {
-            show_text("bt_tec_mec","tec_mec_cont");
+            show_text("bt_tec_mec","tec_mec_cont","./images/TecnicoMecanicoElectricista.png");
         }
 
 
-        function show_text(bt_id, comp_id){
+        function show_text(bt_id, comp_id, img){
+            let contenido = ["ing_ind_cont","ing_comp_cont","prof_biol_cont","cien_biol_cont","cien_geo_cont","ing_agr_cont","ing_aer_cont","ing_bio_cont","cons_cont","ing_amb_cont","ing_civ_cont","ing_ele_cont","ing_mec_cont","ing_emec_cont","ing_quim_cont","tec_mec_cont"];
+            let botones = ["bt_ing_inds","bt_ing_comp","bt_prof_biol","bt_cien_biol","bt_cien_geo","bt_ing_agr","bt_ing_aer","bt_ing_bio","bt_cons","bt_ing_amb","bt_ing_civ","bt_ing_ele","bt_ing_mec","bt_ing_emec","bt_ing_quim","bt_tec_mec"];
             var x = document.getElementById(comp_id)
+            
             if (window.getComputedStyle(x).display === "none") {
+                for (i in contenido) {
+                    if(contenido[i] !== comp_id){
+                        document.getElementById(contenido[i]).style.display = "none";
+                        
+                    }
+                }
+                for (i in botones) {
+                    if(botones[i] !== bt_id){
+                        document.getElementById(botones[i]).style.borderBottomWidth = "1px"
+                        document.getElementById(botones[i]).style.borderBottomLeftRadius = "3px";
+                        document.getElementById(botones[i]).style.borderBottomRightRadius = "3px";
+                    }
+                }
                 x.style.display = "inline-block"
                 document.getElementById(bt_id).style.borderBottomWidth = "0px"
                 document.getElementById(bt_id).style.borderBottomLeftRadius = "0px";
                 document.getElementById(bt_id).style.borderBottomRightRadius = "0px";
+                document.getElementById("imagen").src=img;
             }else{
                 x.style.display = "none"
                 document.getElementById(bt_id).style.borderBottomWidth = "1px"
                 document.getElementById(bt_id).style.borderBottomLeftRadius = "3px";
                 document.getElementById(bt_id).style.borderBottomRightRadius = "3px";
+                document.getElementById("imagen").src="./images/fcefyn-logo.png";
             }
+            
         }
 
     </script>
