@@ -121,16 +121,22 @@ h1, h2,  h3, h4, h5, h6 {
 #main {
     display: flex;
     align-items: flex-start;
+    flex-direction: row;
     justify-content: space-between;
-    width: 100%;
+    width: 100vw;
+    background-color: #e4f1ff;
+    border: 1px solid var(--color-text);
+    border-bottom: none;
 }
+
+/*--------------- Inicio seccion contenido ---------------*/
+
 
 #main section {
     width: 80%;
-    height: 100vh;
-    background: #e4f1ff;
-    border: 1px solid var(--color-text);
-    display: inline-block;
+    border-top: none;
+    display: flex;
+    flex-direction: column;
 }
 
 #main section .section-header {
@@ -148,7 +154,6 @@ h1, h2,  h3, h4, h5, h6 {
     font-size: 20px;
 }
 
-/*--------------- Inicio seccion contenido ---------------*/
 
 #main section .section-content  {
     width: 100%;
@@ -191,15 +196,14 @@ h1, h2,  h3, h4, h5, h6 {
 
 /*--------------- Inicio seccion barra lateral ---------------*/
 #main #sidebar {
-    align-self: flex;
-    width: 20%;
-    height: 100vh;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    align-self: flex;
     justify-content: flex-start;
-    border: 1px solid var(--color-text);
-    border-radius: 3px;
+    flex-direction: column;
+    width: 20%;
+    height: 100%;
+    align-items: center;
+    border: none;
     text-align: center;
 }
 
@@ -209,7 +213,6 @@ h1, h2,  h3, h4, h5, h6 {
     object-fit: cover;
 }
 
-/*--------------- Preguntar ---------------*/
 
 @media(max-width: 1394px) {
     #root header .nav-wrap button {
@@ -225,6 +228,8 @@ h1, h2,  h3, h4, h5, h6 {
         padding-block: 5vh;
     }
     #root header .logo-wrap {
+        align-self: center;
+        flex-direction: column;
         width: 95%;
         margin-bottom: 8px;
     }
