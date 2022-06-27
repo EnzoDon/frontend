@@ -59,6 +59,7 @@ h1, h2,  h3, h4, h5, h6 {
     background-color: var(--header-color);
     padding-inline: 10%;
     padding-block: 2vh;
+    padding-left: 40px;
 }
 
 #root #logo {
@@ -70,7 +71,7 @@ h1, h2,  h3, h4, h5, h6 {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 20%;
+ 
 }
 
 #root header .nav-wrap {
@@ -243,5 +244,14 @@ h1, h2,  h3, h4, h5, h6 {
         width: 100%;
         height: 20px;
         margin-block: 4px;
+    }
+    #root #logo{
+        padding-inline: 90px;
+    }
+    #main section {
+        width: 100%;
+    }
+    #main #sidebar {
+        width: 0%;
     }
 }
