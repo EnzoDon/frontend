@@ -196,7 +196,6 @@ h1, h2,  h3, h4, h5, h6 {
 }
 
 /*--------------- Inicio seccion barra lateral ---------------*/
-
 #main #sidebar {
     display: flex;
     align-self: flex;
@@ -209,6 +208,11 @@ h1, h2,  h3, h4, h5, h6 {
     text-align: center;
 }
 
+#main #sidebar #imagen {
+    width: 90%;
+    height: 100%;
+    object-fit: cover;
+}
 
 
 @media(max-width: 1394px) {
