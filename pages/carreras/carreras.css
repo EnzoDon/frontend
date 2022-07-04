@@ -223,7 +223,7 @@ h1, h2,  h3, h4, h5, h6 {
     }
 }
 
-@media(max-width: 885px) {
+@media(max-width: 425px) {
     #root header {
         flex-direction: column;
         padding-block: 5vh;
