@@ -18,17 +18,17 @@
                     <div id="logo">COMØ</div>
                 </div>
                 <div class="nav-wrap">
-                    <button class="nav">
-                        <a href="../home/home.html">Home</a>                    
+                    <button class="nav" onclick = "change_html('../home/home.html')">
+                        Home                    
+                    </button>
+                    <button class="nav" onclick = "change_html('../guarani/guarani.html')">
+                        Guaraní   
+                    </button>
+                    <button class="nav" onclick = "change_html('../carreras/carreras.html')">
+                        Carreras   
                     </button>
                     <button class="nav">
-                        <a href="../guarani/guarani.html">Guaraní</a>   
-                    </button>
-                    <button class="nav">
-                        <a href="../carreras/carreras.html">Carreras</a>   
-                    </button>
-                    <button class="nav">
-                        <a href="#">Preguntas Frecuentes</a>   
+                        Preguntas Frecuentes   
                     </button>
                 </div>
                 <!-- <button class="btn-icon">
@@ -285,6 +285,10 @@
                 document.getElementById("imagen").src="./images/fcefyn-logo.png";
             }
             
+        }
+
+        function change_html(enlace){
+            window.location.href = enlace;
         }
 
     </script>

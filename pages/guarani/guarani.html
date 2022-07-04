@@ -19,17 +19,17 @@
                     <div id="logo">COMØ</div>
                 </div>
                 <div class="nav-wrap">
-                    <button class="nav">
-                        <a href="../home/home.html">Home</a>
+                    <button class="nav" onclick = "change_html('../home/home.html')">
+                        Home
                     </button>
                     <button class="nav">
-                        <a href="#">Guaraní</a>
+                        Guaraní
                     </button>
-                    <button class="nav">
-                        <a href="../carreras/carreras.html">Carreras</a>
+                    <button class="nav" onclick = "change_html('../carreras/carreras.html')">
+                        Carreras
                     </button>
-                    <button class="nav">
-                        <a href="../preguntas/preguntas.html">Preguntas frecuentes</a>
+                    <button class="nav" onclick = "change_html('../preguntas/preguntas.html')">
+                        Preguntas frecuentes
                     </button>
                 </div>
                 <!-- <button class="btn-icon">
@@ -250,6 +250,10 @@
             document.getElementById(bt_id).style.borderBottomRightRadius = "3px";
         }
         
+    }
+
+    function change_html(enlace){
+            window.location.href = enlace;
     }
 
 </script>
