@@ -210,7 +210,12 @@ h1, h2,  h3, h4, h5, h6 {
 }
 
 
-
+#main #sidebar img {
+    width: n vw;
+    height: 40%;
+    object-fit: cover;
+    position: absolut;
+}
 @media(max-width: 1394px) {
     #root header .nav-wrap button {
         width: 15%;
