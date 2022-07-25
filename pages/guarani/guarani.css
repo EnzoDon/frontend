@@ -28,6 +28,7 @@ body {
     -webkit-font-smoothing: antialiased;
     height: 100vh;
     width: 100vw;
+    background: linear-gradient(90deg, #00d2ff 0%, #3a47d5 100%);
 }
 
 body, input, button {
@@ -56,10 +57,12 @@ h1, h2,  h3, h4, h5, h6 {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: var(--header-color);
+    background-color: #001933;
+   
     padding-inline: 10%;
     padding-block: 2vh;
     padding-left: 40px;
+   
 }
 
 #root #logo {
@@ -71,6 +74,8 @@ h1, h2,  h3, h4, h5, h6 {
     display: flex;
     align-items: center;
     justify-content: center;
+    color: #00bef8;
+    text-shadow: 0 0 10px #00d2ff, 0 0 40px #00d2ff, 0 0 80px #00d2ff ;
  
 }
 
@@ -80,10 +85,11 @@ h1, h2,  h3, h4, h5, h6 {
     display: flex;
     align-items: center;
     justify-content: space-between;
+   
 }
 
 #root header .nav-wrap button {
-    background-color: var(--secondary-color);
+    background-color: #001933;
     color: var(--button-text-color);
     font-weight: lighter;
     font-weight: lighter;
@@ -92,9 +98,16 @@ h1, h2,  h3, h4, h5, h6 {
     height: 20px;
     border: 1px solid var(--color-text);
     border-radius: 2px;
+    font-size: 15px;
+    overflow: hidden;
+    transition: 0.2s;
 }
 #root header .nav-wrap button:hover {
-    opacity: 0.9;
+    background-color: #00d2ff;
+    box-shadow: 0 0 10px #00d2ff, 0 0 40px #00d2ff, 0 0 80px #00d2ff;
+    color: #3a47d5;
+    border: 0;
+    border-radius: 10%;
 }
 
 
@@ -128,6 +141,7 @@ h1, h2,  h3, h4, h5, h6 {
     background-color: #e4f1ff;
     border: 1px solid var(--color-text);
     border-bottom: none;
+
 }
 
 /*--------------- Inicio seccion contenido ---------------*/
@@ -138,6 +152,7 @@ h1, h2,  h3, h4, h5, h6 {
     border-top: none;
     display: flex;
     flex-direction: column;
+    background: linear-gradient(90deg, #00d2ff 0%, #3a47d5 100%);
 }
 
 #main section .section-header {
@@ -163,6 +178,7 @@ h1, h2,  h3, h4, h5, h6 {
     padding-left: 10px;
     padding-right: 10px;
     padding-bottom: 4px;
+    background: linear-gradient(90deg, #00d2ff 0%, #3a47d5 100%);
 }
 
 
@@ -174,6 +190,9 @@ h1, h2,  h3, h4, h5, h6 {
     border: 1px solid var(--color-text);
     border-radius: 3px;
     margin-bottom: 0px;
+    font-size: 17px;
+    background-color: #402ee0;
+    color:#fff
 }
 
 
@@ -189,6 +208,7 @@ h1, h2,  h3, h4, h5, h6 {
     border-bottom-right-radius: 3px;
     text-align:justify;
     display: none;
+    font-size: 15px;
 }
 
 #main section .section-content ul{
