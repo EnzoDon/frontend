@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="./pages/carreras/carreras.css">
+        <script src="./pages/carreras/src/carreras.js"></script>
+        
+        <title>Guía Carreras</title>
+    </head>
+    <body onload="carga_inicial()">
+        <div id="root">
+            <!-- component header -->
+            <header id="header">
+                <div class="logo-wrap">
+                    <div id="logo">COMØ</div>
+                </div>
+                <div class="nav-wrap">
+                    <button class="nav" onclick = "change_html('./home.html')">
+                        Home                    
+                    </button>
+                    <button class="nav" onclick = "change_html('./index.html')">  
+                        Guaraní
+                    </button>
+                    <button class="nav">
+                        Carreras  
+                    </button>
+                    <button class="nav" onclick = "change_html('./preguntas.html')">
+                        Preguntas Frecuentes   
+                    </button>
+                </div>
+            </header>
+            <main id="main">
+                <section>
+                    <div class="section-header">
+                        <p>La facultad de Ciencias Exactas, Fisicas y Naturales cuenta con 16 carreras de grado.<p>
+                    </div>
+                    <div class = "seccion_contenido" id="seccion_contenido">                        
+                                           
+                    </div>
+                </section>
+                
+                <div id="sidebar">
+                    <img id = "imagen" src = "./pages/carreras/images/fcefyn-logo.png">
+                </div>
+            </main>
+        </div>
+    </body>
+
+</html>

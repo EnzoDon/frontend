@@ -73,74 +73,74 @@ function show_text(id_materia, link_img){
         document.getElementById(nombre_boton).style.borderBottomWidth = "1px"
         document.getElementById(nombre_boton).style.borderBottomLeftRadius = "3px";
         document.getElementById(nombre_boton).style.borderBottomRightRadius = "3px";
-        document.getElementById("imagen").src="./images/fcefyn-logo.png";
+        document.getElementById("imagen").src="./pages/carreras/images/fcefyn-logo.png";
     }
     
 }
 
 function incluir_funcion_botones(){
     document.getElementById("ing_ind_bt").addEventListener("click", function(){
-        show_text("ing_ind", "./images/Ingenieria_industrial.jpg");
+        show_text("ing_ind", "./pages/carreras/images/Ingenieria_industrial.jpg");
     });
 
     document.getElementById("ing_comp_bt").onclick = function() {
-        show_text("ing_comp","./images/Ingenieria_en_computacion.jpg");
+        show_text("ing_comp","./pages/carreras/images/Ingenieria_en_computacion.jpg");
     }
 
     document.getElementById("prof_biol_bt").onclick = function() {
-        show_text("prof_biol","./images/ProfesoradoCienciasBiologicas.png");
+        show_text("prof_biol","./pages/carreras/images/ProfesoradoCienciasBiologicas.png");
     }
 
     document.getElementById("cien_biol_bt").onclick = function() {
-        show_text("cien_biol","./images/CienciasBiologicas.png");
+        show_text("cien_biol","./pages/carreras/images/CienciasBiologicas.png");
     }
 
     document.getElementById("cien_geo_bt").onclick = function() {
-        show_text("cien_geo","./images/CienciasGeologicas.png");
+        show_text("cien_geo","./pages/carreras/images/CienciasGeologicas.png");
     }
 
     document.getElementById("ing_agr_bt").onclick = function() {
-        show_text("ing_agr","./images/Ingenieria_en_agrimensura.png");
+        show_text("ing_agr","./pages/carreras/images/Ingenieria_en_agrimensura.png");
     }
 
     document.getElementById("ing_aer_bt").onclick = function() {
-        show_text("ing_aer","./images/Ingenieriaaeronautica.png");
+        show_text("ing_aer","./pages/carreras/images/Ingenieriaaeronautica.png");
     }
     
     document.getElementById("ing_bio_bt").onclick = function() {
-        show_text("ing_bio","./images/Ingenieria_biomedica.jpg");
+        show_text("ing_bio","./pages/carreras/images/Ingenieria_biomedica.jpg");
     }
 
     document.getElementById("cons_bt").onclick = function() {
-        show_text("cons","./images/Constructor.png");
+        show_text("cons","./pages/carreras/images/Constructor.png");
     }
 
     document.getElementById("ing_amb_bt").onclick = function() {
-        show_text("ing_amb","./images/IngenieriaAmbiental.jpg");
+        show_text("ing_amb","./pages/carreras/images/IngenieriaAmbiental.jpg");
     }
 
     document.getElementById("ing_civ_bt").onclick = function() {
-        show_text("ing_civ","./images/IngenieriaCivil.png");
+        show_text("ing_civ","./pages/carreras/images/IngenieriaCivil.png");
     }
 
     document.getElementById("ing_ele_bt").onclick = function() {
-        show_text("ing_ele","./images/IngenieriaElectronica.jpg");
+        show_text("ing_ele","./pages/carreras/images/IngenieriaElectronica.jpg");
     }
 
     document.getElementById("ing_mec_bt").onclick = function() {
-        show_text("ing_mec","./images/IngenieriaMecanica.png");
+        show_text("ing_mec","./pages/carreras/images/IngenieriaMecanica.png");
     }
 
     document.getElementById("ing_emec_bt").onclick = function() {
-        show_text("ing_emec","./images/IngenieriaElectromecanica.png");
+        show_text("ing_emec","./pages/carreras/images/IngenieriaElectromecanica.png");
     }
 
     document.getElementById("ing_quim_bt").onclick = function() {
-        show_text("ing_quim","./images/IngenieriaQuimica.png");
+        show_text("ing_quim","./pages/carreras/images/IngenieriaQuimica.png");
     }
 
     document.getElementById("tec_mec_bt").onclick = function() {
-        show_text("tec_mec","./images/TecnicoMecanicoElectricista.png");
+        show_text("tec_mec","./pages/carreras/images/TecnicoMecanicoElectricista.png");
     }
 }
 
