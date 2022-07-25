@@ -156,7 +156,7 @@ h1, h2,  h3, h4, h5, h6 {
 }
 
 
-#main section .section-content  {
+#main section .seccion_contenido  {
     width: 100%;
     background: #e4f1ff;
     border: none;
@@ -166,7 +166,7 @@ h1, h2,  h3, h4, h5, h6 {
 }
 
 
-#main section .section-content  .bt_cont {
+#main section .seccion_contenido  .materia_bt {
     width: 100%;
     height: 30px;
     margin-block: 4px;
@@ -177,7 +177,7 @@ h1, h2,  h3, h4, h5, h6 {
 }
 
 
-#main section .section-content .text-content{
+#main section .seccion_contenido .materia_contenido{
     border-top-width: none;
     margin-top: 0px;
     padding-left: 4px;
@@ -191,7 +191,7 @@ h1, h2,  h3, h4, h5, h6 {
     display: none;
 }
 
-#main section .section-content ul{
+#main section .seccion_contenido ul{
     list-style-position: inside;
 }
 
