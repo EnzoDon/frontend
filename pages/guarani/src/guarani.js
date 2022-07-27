@@ -167,10 +167,10 @@ function carga_inicial(){
     incluir_seccion("fech_exam", "Fechas de Examenes");
     actualizar_parrafo("fech_exam", `
     Las fechas de examenes son tres en el año:
-    <ul>
-     <li>Febrero</li>
-     <li>Junio/Julio</li>  
-     <li>Noviembre/Diciembre</li>
+    <ul >
+     <li class="fechas">Febrero</li>
+     <li class="fechas">Junio/Julio</li>  
+     <li class="fechas">Noviembre/Diciembre</li>
      </ul>
      En el siguiente link podrás ver las fechas de cada examen.
     `);
