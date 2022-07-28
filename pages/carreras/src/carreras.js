@@ -1,6 +1,7 @@
 let materias = [];
 let botones = [];
 let contenidos = [];
+let  menu_lateral = false;
 
 function incluir_materia(id_materia, nombre){
     let nombre_boton = id_materia + "_bt";
@@ -78,6 +79,21 @@ function show_text(id_materia, link_img){
     
 }
 
+function mostrar_menu_lateral(){
+    if(menu_lateral){
+        document.getElementById("nav_wrap_smaller_view").style.display="none";
+        menu_lateral = false;
+        document.getElementById("menu_lateral_bt").innerHTML = `   
+        Menu`;
+
+    }else{
+        document.getElementById("nav_wrap_smaller_view").style.display="flex";
+        menu_lateral = true;
+        document.getElementById("menu_lateral_bt").innerHTML = `   
+        Volver`;
+    }
+}
+
 function incluir_funcion_botones(){
     document.getElementById("ing_ind_bt").addEventListener("click", function(){
         show_text("ing_ind", "./pages/carreras/images/Ingenieria_industrial.jpg");
@@ -142,7 +158,23 @@ function incluir_funcion_botones(){
     document.getElementById("tec_mec_bt").onclick = function() {
         show_text("tec_mec","./pages/carreras/images/TecnicoMecanicoElectricista.png");
     }
+
+    document.getElementById("menu_lateral_bt").onclick = function() {
+        mostrar_menu_lateral();
+    }
+
+    window.onresize = function(){
+        var anchoVentana = window.innerWidth;
+        if(anchoVentana >= 886){
+            document.getElementById("nav_wrap_smaller_view").style.display="none";
+            menu_lateral = false;
+            document.getElementById("menu_lateral_bt").innerHTML = `   
+            Menu`;
+        }
+    };
 }
+
+
 
 function change_html(enlace){
     window.location.href = enlace;

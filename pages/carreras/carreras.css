@@ -44,6 +44,7 @@ h1, h2,  h3, h4, h5, h6 {
 
 #root {
     height: 100vh;
+    box-sizing: border-box;
     width: 100vw;
     display: flex;
     flex-direction: column;
@@ -52,7 +53,8 @@ h1, h2,  h3, h4, h5, h6 {
 }
 
 #root header {
-    width: 100%;
+    box-sizing: border-box;
+    width: 100vw;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -89,7 +91,7 @@ h1, h2,  h3, h4, h5, h6 {
     font-weight: lighter;
     width: 15%;
     min-width: 80px;
-    height: 20px;
+    height: 40px;
     border: 1px solid var(--color-text);
     border-radius: 2px;
 }
@@ -116,6 +118,17 @@ h1, h2,  h3, h4, h5, h6 {
     border: 1px solid var(--color-text);
     border-radius: 4px;
 }
+
+
+#root #header_desktop_view{
+    display: flex;
+}
+
+
+#root #header_smaller_view{
+    display: none;
+}
+
 
 /*--------------- Inicio seccion principal ---------------*/
 
@@ -214,20 +227,62 @@ h1, h2,  h3, h4, h5, h6 {
     object-fit: cover;
 }
 
+#root #nav_wrap_smaller_view{
+    box-sizing: border-box;
+    width: 35%;
+    height: 100vh;
+    background-color: var(--header-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    position: absolute;
+    top: 85px;
+    left: 0px;
+    margin-right: auto;
+    display: none;
 
-@media(max-width: 1394px) {
+}
+
+#root #nav_wrap_smaller_view button{
+    box-sizing: border-box;
+    background-color: var(--secondary-color);
+    color: var(--button-text-color);
+    font-weight: lighter;
+    font-weight: lighter;
+    width: 80%;
+    min-width: 80px;
+    height: 40px;
+    border: 1px solid var(--color-text);
+    border-radius: 2px;
+    margin-bottom: 10px;
+    
+}
+
+#root #nav_wrap_smaller_view button:hover {
+    opacity: 0.9;
+}
+
+
+
+
+
+/*@media(max-width: 1394px) {
     #root header .nav-wrap button {
         width: 15%;
         min-width: 80px;
         height: 40px;
     }
-}
+}*/
 
-@media(max-width: 425px) {
-    #root header {
-        flex-direction: column;
+@media(max-width: 885px) {
+
+   /* #root header {
+        flex-direction: row;
         padding-block: 5vh;
     }
+
     #root header .logo-wrap {
         align-self: center;
         flex-direction: column;
@@ -248,10 +303,21 @@ h1, h2,  h3, h4, h5, h6 {
     #root #logo{
         padding-inline: 90px;
     }
+*/
     #main section {
         width: 100%;
     }
     #main #sidebar {
         width: 0%;
+    }
+
+
+    #root #header_desktop_view{
+        display: none;
+    }
+
+    
+    #root #header_smaller_view{
+        display: flex;
     }
 }
