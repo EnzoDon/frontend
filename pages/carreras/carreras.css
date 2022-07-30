@@ -230,7 +230,7 @@ h1, h2,  h3, h4, h5, h6 {
 #root #nav_wrap_smaller_view{
     box-sizing: border-box;
     width: 35%;
-    height: 100vh;
+    height: fit-content;
     background-color: var(--header-color);
     display: flex;
     flex-direction: column;
@@ -238,7 +238,7 @@ h1, h2,  h3, h4, h5, h6 {
     align-items: center;
     align-content: center;
     position: absolute;
-    top: 85px;
+    top: 89px;
     left: 0px;
     margin-right: auto;
     display: none;
