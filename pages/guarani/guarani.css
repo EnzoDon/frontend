@@ -53,16 +53,16 @@ h1, h2,  h3, h4, h5, h6 {
 }
 
 
-/*--------------- Inicio seccion header ---------------*/
+/*--------------- Inicio seccion headers ---------------*/
 
 #root {
+    box-sizing: border-box;
     height: 100vh;
     width: 100vw;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    
 }
 
 #root header {
@@ -94,7 +94,7 @@ h1, h2,  h3, h4, h5, h6 {
  
 }
 
-#root header .nav-wrap {
+#root header .menu_div {
     width: 80%;
     height: 100%;
     display: flex;
@@ -103,14 +103,14 @@ h1, h2,  h3, h4, h5, h6 {
     cursor: url(./cursor/ttt2.png), auto;
 }
 
-#root header .nav-wrap button {
+#root header .menu_div button {
     background-color: #001933;
     color: var(--button-text-color);
     font-weight: lighter;
     font-weight: lighter;
     width: 15%;
     min-width: 80px;
-    height: 20px;
+    height: 40px;
     border: 0;
     border-radius: 2px;
     font-size: 17px;
@@ -118,7 +118,8 @@ h1, h2,  h3, h4, h5, h6 {
     transition: 0.2s;
     cursor: url(./cursor/ttt2.png), auto;
 }
-#root header .nav-wrap button:hover {
+
+#root header .menu_div button:hover {
     background-color: #00d2ff;
     box-shadow: 0 0 10px #00d2ff, 0 0 40px #00d2ff, 0 0 80px #00d2ff;
     color: #3a47d5;
@@ -146,15 +147,17 @@ h1, h2,  h3, h4, h5, h6 {
     border: 1px solid var(--color-text);
     border-radius: 4px;
 }
-#root .bt_cont:hover{
-    background-color: #93ffa1;
-    box-shadow: 0 0 10px #93ffa1, 0 0 40px #93ffa1, 0 0 80px #93ffa1;
-    color: #3a47d5;
-    border: 0;
-    border-radius: 10%;
-    cursor: url(./cursor/ttt2.png), auto;
-    padding-bottom: 8px;
+
+
+#root #header_desktop{
+    display: flex;
 }
+
+
+#root #header_smartphone{
+    display: none;
+}
+
 /*--------------- Inicio seccion principal ---------------*/
 
 #main {
@@ -180,7 +183,7 @@ h1, h2,  h3, h4, h5, h6 {
     background: linear-gradient(90deg, #00d2ff 0%, #93ffa1 100%);
 }
 
-#main section .section-header {
+#main section .titulo_main {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -188,7 +191,7 @@ h1, h2,  h3, h4, h5, h6 {
     
 }
 
-#main section .section-header p {
+#main section .titulo_main p {
     font-family: 'Roboto', sans-serif;
     font-weight: 100;
     font-style: normal;
@@ -196,7 +199,7 @@ h1, h2,  h3, h4, h5, h6 {
 }
 
 
-#main section .seccion_contenido  {
+#main section .contenido_main  {
     width: 100%;
     background: #e4f1ff;
     border: none;
@@ -218,7 +221,7 @@ h1, h2,  h3, h4, h5, h6 {
     padding-bottom: 8px;
 }*/
 
-#main section .seccion_contenido  .seccion_bt {
+#main section .contenido_main  .seccion_bt {
     width: 100%;
     height: 30px;
     margin-block: 4px;
@@ -231,13 +234,13 @@ h1, h2,  h3, h4, h5, h6 {
     color:#fff
     
      }
-#main section .seccion_contenido  .seccion_bt:hover {
+#main section .contenido_main  .seccion_bt:hover {
     box-shadow: 0 0 10px #93ffa1, 0 0 40px #93ffa1, 0 0 80px #93ffa1;
     cursor: url(./cursor/ttt2.png), auto;
     color: #fff;
 }
 
-#main section .seccion_contenido .seccion_parrafo{
+#main section .contenido_main .seccion_parrafo{
     border-top-width: none;
     margin-top: 0px;
     padding-left: 4px;
@@ -253,22 +256,34 @@ h1, h2,  h3, h4, h5, h6 {
     color: #001933;
 }
 
-#main section .seccion_contenido ul{
+#main section .contenido_main ul{
     list-style-position: inside;
     cursor: url(./cursor/ttt2.png), auto;
     color: #00bef8;
 }
+
 a{
     cursor: url(./cursor/ttt2.png), auto;
     text-decoration: none;
 }
+
 li{
     color: #001933;
 }
 
+#root .bt_cont:hover{
+    background-color: #93ffa1;
+    box-shadow: 0 0 10px #93ffa1, 0 0 40px #93ffa1, 0 0 80px #93ffa1;
+    color: #3a47d5;
+    border: 0;
+    border-radius: 10%;
+    cursor: url(./cursor/ttt2.png), auto;
+    padding-bottom: 8px;
+}
+
 /*--------------- Inicio seccion barra lateral ---------------*/
 
-#main #sidebar {
+#main #barra_lateral_main {
     /*display: flex;*/
     align-self: flex;
     justify-content: flex-start;
@@ -287,7 +302,7 @@ li{
 }
 
 
-#main #sidebar img {
+#main #barra_lateral_main img {
     /*width: n vw;
     height: 40%;*/
     object-fit: contain;
@@ -300,9 +315,64 @@ li{
     opacity: 1;
 }
 
+/*--------------- Inicio seccion menu pantallas pequeñas ---------------*/
+
+
+#root #menu_div_smartphone{
+    box-sizing: border-box;
+    width: 35%;
+    height: fit-content;
+    background-color: var(--header-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    position: absolute;
+    top: 90px;
+    left: 0px;
+    margin-right: auto;
+    display: none;
+
+}
+
+#root #menu_div_smartphone button{
+    box-sizing: border-box;
+    background-color: #001933;
+    color: var(--button-text-color);
+    font-weight: lighter;
+    font-weight: lighter;
+    width: 80%;
+    min-width: 80px;
+    height: 40px;
+    border: 0;
+    border-radius: 2px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 17px;
+    overflow: hidden;
+    transition: 0.2s;
+    cursor: url(./cursor/ttt2.png), auto;
+    
+}
+
+#root #menu_div_smartphone button:hover {
+    background-color: #00d2ff;
+    box-shadow: 0 0 10px #00d2ff, 0 0 40px #00d2ff, 0 0 80px #00d2ff;
+    color: #3a47d5;
+    border: 0;
+    border-radius: 10%;
+    cursor: url(./cursor/ttt2.png), auto;
+}
+
+
+
+/*--------------- Inicio seccion cambios segun tamanio pantalla ---------------*/
+
+/*
 
 @media(max-width: 1394px) {
-    #root header .nav-wrap button {
+    #root header .menu_div button {
         width: 15%;
         min-width: 80px;
         height: 40px;
@@ -314,19 +384,19 @@ li{
         flex-direction: column;
         padding-block: 5vh;
     }
-    #root header .logo-wrap {
+    #root header .logo_div {
         align-self: center;
         flex-direction: column;
         width: 95%;
         margin-bottom: 8px;
     }
-    #root header .nav-wrap {
+    #root header .menu_div {
         align-self: center;
         flex-direction: column;
         width: 95%;
 
     }
-    #root header .nav-wrap button {
+    #root header .menu_div button {
         width: 100%;
         height: 20px;
         margin-block: 4px;
@@ -337,10 +407,34 @@ li{
     #main section {
         width: 100%;
     }
-    #main #sidebar {
+    #main #barra_lateral_main {
         width: 0%;
     }
 }
+
+*/
+
+@media(max-width: 885px) {
+
+    #main section {
+        width: 100%;
+    }
+    #main #barra_lateral_main {
+        width: 0%;
+    }
+
+
+    #root #header_desktop{
+        display: none;
+    }
+
+    
+    #root #header_smartphone{
+        display: flex;
+    }
+}
+
+
 /*Aquí debajo va el FOOTER*/
 footer {
     position: relative;

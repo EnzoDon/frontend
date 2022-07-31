@@ -1,6 +1,7 @@
 let secciones = [];
 let botones = [];
 let contenidos = [];
+let  menu_lateral = false;
 
 
 
@@ -23,7 +24,7 @@ function incluir_seccion(id_seccion, nombre_seccion){
         <ul id = ${nombre_lista}>
         </ul>
         </div>`;
-    document.getElementById("seccion_contenido").appendChild(div_seccion);
+    document.getElementById("contenido_main").appendChild(div_seccion);
     secciones.push(id_seccion);
     botones.push(nombre_boton);
     contenidos.push(nombre_contenido);
@@ -78,6 +79,22 @@ function show_text(id_seccion){
     }
 }
 
+
+function mostrar_menu_lateral(){
+    if(menu_lateral){
+        document.getElementById("menu_div_smartphone").style.display="none";
+        menu_lateral = false;
+        document.getElementById("boton_menu_smartphone").innerHTML = `   
+        Menú`;
+
+    }else{
+        document.getElementById("menu_div_smartphone").style.display="flex";
+        menu_lateral = true;
+        document.getElementById("boton_menu_smartphone").innerHTML = `   
+        Ocultar`;
+    }
+}
+
 function incluir_funcion_botones(){
     document.getElementById("pre_insc_bt").onclick = function() {
         show_text("pre_insc");
@@ -117,6 +134,20 @@ function incluir_funcion_botones(){
       document.getElementById("encuesta_bt").onclick = function() {
         show_text("encuesta");
     }
+
+    document.getElementById("boton_menu_smartphone").onclick = function() {
+        mostrar_menu_lateral();
+    }
+
+    window.onresize = function(){
+        var anchoVentana = window.innerWidth;
+        if(anchoVentana >= 886){
+            document.getElementById("menu_div_smartphone").style.display="none";
+            menu_lateral = false;
+            document.getElementById("boton_menu_smartphone").innerHTML = `   
+            Menu`;
+        }
+    };
 }
 
 
