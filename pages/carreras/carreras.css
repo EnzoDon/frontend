@@ -40,7 +40,7 @@ h1, h2,  h3, h4, h5, h6 {
 }
 
 
-/*--------------- Inicio seccion header ---------------*/
+/*--------------- Inicio seccion headers ---------------*/
 
 #root {
     height: 100vh;
@@ -76,7 +76,7 @@ h1, h2,  h3, h4, h5, h6 {
  
 }
 
-#root header .nav-wrap {
+#root header .menu_div {
     width: 80%;
     height: 100%;
     display: flex;
@@ -84,7 +84,7 @@ h1, h2,  h3, h4, h5, h6 {
     justify-content: space-between;
 }
 
-#root header .nav-wrap button {
+#root header .menu_div button {
     background-color: var(--secondary-color);
     color: var(--button-text-color);
     font-weight: lighter;
@@ -95,7 +95,7 @@ h1, h2,  h3, h4, h5, h6 {
     border: 1px solid var(--color-text);
     border-radius: 2px;
 }
-#root header .nav-wrap button:hover {
+#root header .menu_div button:hover {
     opacity: 0.9;
 }
 
@@ -120,12 +120,12 @@ h1, h2,  h3, h4, h5, h6 {
 }
 
 
-#root #header_desktop_view{
+#root #header_desktop{
     display: flex;
 }
 
 
-#root #header_smaller_view{
+#root #header_smartphone{
     display: none;
 }
 
@@ -153,7 +153,7 @@ h1, h2,  h3, h4, h5, h6 {
     flex-direction: column;
 }
 
-#main section .section-header {
+#main section .titulo_main {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -161,7 +161,7 @@ h1, h2,  h3, h4, h5, h6 {
     
 }
 
-#main section .section-header p {
+#main section .titulo_main p {
     font-family: 'Roboto', sans-serif;
     font-weight: 100;
     font-style: normal;
@@ -169,7 +169,7 @@ h1, h2,  h3, h4, h5, h6 {
 }
 
 
-#main section .seccion_contenido  {
+#main section .contenido_main  {
     width: 100%;
     background: #e4f1ff;
     border: none;
@@ -179,7 +179,7 @@ h1, h2,  h3, h4, h5, h6 {
 }
 
 
-#main section .seccion_contenido  .materia_bt {
+#main section .contenido_main  .materia_bt {
     width: 100%;
     height: 30px;
     margin-block: 4px;
@@ -190,7 +190,7 @@ h1, h2,  h3, h4, h5, h6 {
 }
 
 
-#main section .seccion_contenido .materia_contenido{
+#main section .contenido_main .materia_contenido{
     border-top-width: none;
     margin-top: 0px;
     padding-left: 4px;
@@ -204,12 +204,12 @@ h1, h2,  h3, h4, h5, h6 {
     display: none;
 }
 
-#main section .seccion_contenido ul{
+#main section .contenido_main ul{
     list-style-position: inside;
 }
 
 /*--------------- Inicio seccion barra lateral ---------------*/
-#main #sidebar {
+#main #barra_lateral_main {
     display: flex;
     align-self: flex;
     justify-content: flex-start;
@@ -221,13 +221,16 @@ h1, h2,  h3, h4, h5, h6 {
     text-align: center;
 }
 
-#main #sidebar #imagen {
+#main #barra_lateral_main #imagen_barra_lateral {
     width: 90%;
     height: 100%;
     object-fit: cover;
 }
 
-#root #nav_wrap_smaller_view{
+/*--------------- Inicio seccion menu pantallas pequeñas ---------------*/
+
+
+#root #menu_div_smartphone{
     box-sizing: border-box;
     width: 35%;
     height: fit-content;
@@ -245,7 +248,7 @@ h1, h2,  h3, h4, h5, h6 {
 
 }
 
-#root #nav_wrap_smaller_view button{
+#root #menu_div_smartphone button{
     box-sizing: border-box;
     background-color: var(--secondary-color);
     color: var(--button-text-color);
@@ -260,64 +263,29 @@ h1, h2,  h3, h4, h5, h6 {
     
 }
 
-#root #nav_wrap_smaller_view button:hover {
+#root #menu_div_smartphone button:hover {
     opacity: 0.9;
 }
 
 
-
-
-
-/*@media(max-width: 1394px) {
-    #root header .nav-wrap button {
-        width: 15%;
-        min-width: 80px;
-        height: 40px;
-    }
-}*/
+/*--------------- Inicio seccion cambios segun tamanio pantalla ---------------*/
 
 @media(max-width: 885px) {
 
-   /* #root header {
-        flex-direction: row;
-        padding-block: 5vh;
-    }
-
-    #root header .logo-wrap {
-        align-self: center;
-        flex-direction: column;
-        width: 95%;
-        margin-bottom: 8px;
-    }
-    #root header .nav-wrap {
-        align-self: center;
-        flex-direction: column;
-        width: 95%;
-
-    }
-    #root header .nav-wrap button {
-        width: 100%;
-        height: 20px;
-        margin-block: 4px;
-    }
-    #root #logo{
-        padding-inline: 90px;
-    }
-*/
     #main section {
         width: 100%;
     }
-    #main #sidebar {
+    #main #barra_lateral_main {
         width: 0%;
     }
 
 
-    #root #header_desktop_view{
+    #root #header_desktop{
         display: none;
     }
 
     
-    #root #header_smaller_view{
+    #root #header_smartphone{
         display: flex;
     }
 }

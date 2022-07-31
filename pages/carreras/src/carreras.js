@@ -22,7 +22,7 @@ function incluir_materia(id_materia, nombre){
             <ul id = ${nombre_lista}>
             </ul>
         </div>`;
-    document.getElementById("seccion_contenido").appendChild(div_materia);
+    document.getElementById("contenido_main").appendChild(div_materia);
     materias.push(id_materia);
     botones.push(nombre_boton);
     contenidos.push(nombre_contenido);
@@ -68,29 +68,29 @@ function show_text(id_materia, link_img){
         document.getElementById(nombre_boton).style.borderBottomWidth = "0px"
         document.getElementById(nombre_boton).style.borderBottomLeftRadius = "0px";
         document.getElementById(nombre_boton).style.borderBottomRightRadius = "0px";
-        document.getElementById("imagen").src= link_img;
+        document.getElementById("imagen_barra_lateral").src= link_img;
     }else{
         contenido.style.display = "none"
         document.getElementById(nombre_boton).style.borderBottomWidth = "1px"
         document.getElementById(nombre_boton).style.borderBottomLeftRadius = "3px";
         document.getElementById(nombre_boton).style.borderBottomRightRadius = "3px";
-        document.getElementById("imagen").src="./pages/carreras/images/fcefyn-logo.png";
+        document.getElementById("imagen_barra_lateral").src="./pages/carreras/images/fcefyn-logo.png";
     }
     
 }
 
 function mostrar_menu_lateral(){
     if(menu_lateral){
-        document.getElementById("nav_wrap_smaller_view").style.display="none";
+        document.getElementById("menu_div_smartphone").style.display="none";
         menu_lateral = false;
-        document.getElementById("menu_lateral_bt").innerHTML = `   
-        Menu`;
+        document.getElementById("boton_menu_smartphone").innerHTML = `   
+        Menú`;
 
     }else{
-        document.getElementById("nav_wrap_smaller_view").style.display="flex";
+        document.getElementById("menu_div_smartphone").style.display="flex";
         menu_lateral = true;
-        document.getElementById("menu_lateral_bt").innerHTML = `   
-        Volver`;
+        document.getElementById("boton_menu_smartphone").innerHTML = `   
+        Ocultar`;
     }
 }
 
@@ -159,16 +159,16 @@ function incluir_funcion_botones(){
         show_text("tec_mec","./pages/carreras/images/TecnicoMecanicoElectricista.png");
     }
 
-    document.getElementById("menu_lateral_bt").onclick = function() {
+    document.getElementById("boton_menu_smartphone").onclick = function() {
         mostrar_menu_lateral();
     }
 
     window.onresize = function(){
         var anchoVentana = window.innerWidth;
         if(anchoVentana >= 886){
-            document.getElementById("nav_wrap_smaller_view").style.display="none";
+            document.getElementById("menu_div_smartphone").style.display="none";
             menu_lateral = false;
-            document.getElementById("menu_lateral_bt").innerHTML = `   
+            document.getElementById("boton_menu_smartphone").innerHTML = `   
             Menu`;
         }
     };
