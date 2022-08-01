@@ -40,26 +40,54 @@
                     <i class="fa-solid fa-bars" id="menu-icon"></i>
                 </button> -->
             </header>
-            <main id="main">
-                <div id="sidebar">
-                    <div id="mapid"></div>
-                </div>
-                <section>
-                    <div class="section-header">
-                        <h2>Noticias</h2>
-                        <div class="search">
-                            <i class="fa-solid fa-magnifying-glass"></i>
+              <h1>¡Bienvenidos!</h1>
+             <h2><u>Guìa del estudiantes</u></h2>
+             <h2>Noticias</h2>
+                 
+              
+            
+                       
+            
+                        <div class="section-other">
+            
+                            <ul>
+                          <img src="https://w3.fcq.unc.edu.ar/sites/default/files/styles/noticias/public/noticias/ingreso_2.jpg?itok=RAcMB_Am" alt="">
+                            </label></li>
+                                <li>Comision_cero@gmail.com</li>
+                                <li><a href="https://com0.netlify.app">Link compartir</a></li>
+            
+                            </ul>
+            
                         </div>
-                    </div>
-    
-                </section>
+            
+            
+               
+            
+            <div>
+                <img src="imagen/PLANO DE LA FACULTAD .jpg" alt="">
 
-            </main>
-
+                <img src="imagen/PLANTA BAJA.jpg" alt="">
+            </div>
+       
+                    <main id="main">
+                        <div id="sidebar">
+                            <div id="mapid"></div>
+                        </div>
+                        <section>
+                            <div class="section-header"> 
+                               
+                                <div class="search">
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                </div>
+                            </div>
             
-            
-            
+                        </section>
+        
+                    </main>
         </div>
+
+          
+          
     </body>
 
     <script>
@@ -91,9 +119,18 @@
         console.log('renderedHeader.clientHeight\t' + renderedHeader.clientHeight)
         console.log('vh - renderedHeader.clientHeight\t' + (vh - renderedHeader.clientHeight))
         renderedMap.style.height = (vh - renderedHeader.clientHeight) + 'px';
+
     </script>
 
+<script>
+function openNav(){
+	document.getElementById('mySidenav').style.width="250px";
+}
 
+function closeNav(){
+	document.getElementById("mySidenav").style.width="0";
 
+}
+</script>
     <script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js" integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ==" crossorigin=""></script>
 </html>
