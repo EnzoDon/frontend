@@ -335,10 +335,9 @@ li{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    /*align-items: center;*/
-    align-content: center;
+    align-items: center;
     position: absolute;
-    top: 93px;
+    top: 90px;
     left: 0px;
     margin-right: auto;
     display: none;
@@ -384,9 +383,12 @@ li{
 
 #root #menu_div_smartphone .botones_meu_div_smartphone{
     position: absolute;
-    top: 4px;
-    left: 4px;
-    width: 35%;
+    
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
 }
 
 /*--------------- Inicio seccion cambios segun tamanio pantalla ---------------*/
@@ -410,6 +412,7 @@ li{
     #root #header_smartphone{
         display: flex;
     }
+
 }
 
 
