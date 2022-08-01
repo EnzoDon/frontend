@@ -35,7 +35,7 @@ body {
     background: #5433FF;  /* fallback for old browsers */
 /*  background: -webkit-linear-gradient(to right, #A5FECB, #20BDFF, #5433FF);  Chrome 10-25, Safari 5.1-6 */
  /*background: linear-gradient(to right, #A5FECB, #20BDFF, #5433FF);  W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-background: linear-gradient(90deg, #00d2ff 0%, #93ffa1 100%);
+    /*background: linear-gradient(90deg, #00d2ff 0%, #93ffa1 100%);*/
      display: grid;
      justify-content: flex-end;
      align-items: flex-end;
@@ -63,6 +63,7 @@ h1, h2,  h3, h4, h5, h6 {
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
+    
 }
 
 #root header {
@@ -180,7 +181,7 @@ h1, h2,  h3, h4, h5, h6 {
     border-top: none;
     display: flex;
     flex-direction: column;
-    background: linear-gradient(90deg, #00d2ff 0%, #93ffa1 100%);
+    /*background: linear-gradient(90deg, #00d2ff 0%, #93ffa1 100%);*/
 }
 
 #main section .titulo_main {
@@ -188,6 +189,7 @@ h1, h2,  h3, h4, h5, h6 {
     align-items: center;
     justify-content: space-between;
     margin-inline: 5px; 
+    background: none;
     
 }
 
@@ -206,7 +208,8 @@ h1, h2,  h3, h4, h5, h6 {
     padding-left: 10px;
     padding-right: 10px;
     padding-bottom: 4px;
-    background: linear-gradient(90deg, #00d2ff 0%, #93ffa1 100%);
+    /*background: linear-gradient(90deg, #00d2ff 0%, #93ffa1 100%);*/
+    background: none;
     transition: 0.2s;
     font-size: 17px;
     
@@ -233,7 +236,7 @@ h1, h2,  h3, h4, h5, h6 {
     background-color: #124F6E;
     color:#fff
     
-     }
+}
 #main section .contenido_main  .seccion_bt:hover {
     
    
@@ -298,9 +301,11 @@ li{
     top: 20%;
     position: relative;
     overflow: auto;
-    background: linear-gradient(90deg, #93ffa1ff 0%, #93ffa1 100%);
+    /*background: linear-gradient(90deg, #93ffa1ff 0%, #93ffa1 100%);*/
+    background: none;
     overflow: hidden;
     opacity: 0.5;
+    background: none;
 }
 
 
@@ -309,7 +314,8 @@ li{
     height: 40%;*/
     object-fit: contain;
     position: absolut;
-    background: linear-gradient(90deg, #00d2ff 0%, #93ffa1 100%);
+    /*background: linear-gradient(90deg, #00d2ff 0%, #93ffa1 100%);*/
+    background: none;
    
 
 }
