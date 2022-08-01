@@ -20,7 +20,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    cursor: url(./cursor/ttt.png), auto;
+    
     
 }
 
@@ -30,7 +30,7 @@ body {
     -webkit-font-smoothing: antialiased;
     height: 100vh;
     width: 100vw;
-    cursor: url(./cursor/ttt.png), auto;
+    
     /*background: linear-gradient(90deg, #00d2ff 0%, #3f9ffa 100%);*/
     background: #5433FF;  /* fallback for old browsers */
 /*  background: -webkit-linear-gradient(to right, #A5FECB, #20BDFF, #5433FF);  Chrome 10-25, Safari 5.1-6 */
@@ -75,7 +75,7 @@ h1, h2,  h3, h4, h5, h6 {
     padding-inline: 10%;
     padding-block: 2vh;
     padding-left: 40px;
-    cursor: url(./cursor/ttt2.png), auto;
+    
    
 }
 
@@ -90,7 +90,7 @@ h1, h2,  h3, h4, h5, h6 {
     justify-content: center;
     color: #00bef8;
     text-shadow: 0 0 10px #00d2ff, 0 0 40px #00d2ff, 0 0 80px #00d2ff ;
-    cursor: url(./cursor/ttt2.png), auto;
+    
  
 }
 
@@ -100,7 +100,7 @@ h1, h2,  h3, h4, h5, h6 {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    cursor: url(./cursor/ttt2.png), auto;
+   
 }
 
 #root header .menu_div button {
@@ -116,7 +116,7 @@ h1, h2,  h3, h4, h5, h6 {
     font-size: 17px;
     overflow: hidden;
     transition: 0.2s;
-    cursor: url(./cursor/ttt2.png), auto;
+   
 }
 
 #root header .menu_div button:hover {
@@ -125,7 +125,7 @@ h1, h2,  h3, h4, h5, h6 {
     color: #3a47d5;
     border: 0;
     border-radius: 10%;
-    cursor: url(./cursor/ttt2.png), auto;
+ 
 }
 
 
@@ -235,9 +235,11 @@ h1, h2,  h3, h4, h5, h6 {
     
      }
 #main section .contenido_main  .seccion_bt:hover {
-    box-shadow: 0 0 10px #93ffa1, 0 0 40px #93ffa1, 0 0 80px #93ffa1;
-    cursor: url(./cursor/ttt2.png), auto;
-    color: #fff;
+    
+   
+    color: #001933;
+    background-color: #93ffa1;
+    border: 0;
 }
 
 #main section .contenido_main .seccion_parrafo{
@@ -258,12 +260,12 @@ h1, h2,  h3, h4, h5, h6 {
 
 #main section .contenido_main ul{
     list-style-position: inside;
-    cursor: url(./cursor/ttt2.png), auto;
+    
     color: #00bef8;
 }
 
 a{
-    cursor: url(./cursor/ttt2.png), auto;
+   
     text-decoration: none;
 }
 
@@ -277,7 +279,7 @@ li{
     color: #3a47d5;
     border: 0;
     border-radius: 10%;
-    cursor: url(./cursor/ttt2.png), auto;
+    
     padding-bottom: 8px;
 }
 
@@ -352,7 +354,7 @@ li{
     font-size: 17px;
     overflow: hidden;
     transition: 0.2s;
-    cursor: url(./cursor/ttt2.png), auto;
+    
     
 }
 
@@ -362,7 +364,7 @@ li{
     color: #3a47d5;
     border: 0;
     border-radius: 10%;
-    cursor: url(./cursor/ttt2.png), auto;
+    
 }
 
 
