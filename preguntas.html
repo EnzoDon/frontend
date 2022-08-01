@@ -13,212 +13,73 @@
     <body onload="carga_inicial()">
         <div id="root">
             <!-- component header -->
-            <header id="header">
-                <div class="logo-wrap">
+            <header id="header_desktop">
+                <div class="logo_div">
                     <div id="logo">COMØ</div>
                 </div>
-                <div class="nav-wrap">
-                    <button class="nav" onclick = "change_html('./home.html')">
+                <div class="menu_div">
+                    <button class="boton_menu" onclick = "change_html('./home.html')">
                         Home                    
                     </button>
-                    <button class="nav" onclick = "change_html('./index.html')">
+                    <button class="boton_menu" onclick = "change_html('./index.html')">
                         Guaraní   
                     </button>
-                    <button class="nav" onclick = "change_html('./carreras.html')">
+                    <button class="boton_menu" onclick = "change_html('./carreras.html')">
                         Carreras   
                     </button>
-                    <button class="nav">
+                    <button class="boton_menu">
                         Preguntas Frecuentes   
                     </button>
                 </div>
             </header>
+
+            <header id="header_smartphone">
+                <div class="menu_div">
+                    <button class="boton_menu" id="boton_menu_smartphone">
+                        Menú                    
+                    </button>
+                </div>
+                <div class="logo_div">
+                    <div id="logo">COMØ</div>
+                </div>
+
+            </header>
+
+            <div class="menu_div" id="menu_div_smartphone">
+                <button class="boton_menu" onclick = "change_html('./home.html')">
+                    Home                    
+                </button>
+                <button class="boton_menu" onclick = "change_html('./index.html')">
+                    Guaraní   
+                </button>
+                <button class="boton_menu" onclick = "change_html('./carreras.html')">
+                    Carreras   
+                </button>
+                <button class="boton_menu">
+                    Preguntas Frecuentes   
+                </button>
+            </div>
+
+
+
+
+
             <main id="main">
                 <section>
-                    <div class="section-header">
+                    <div class="titulo_main">
                         <p>PREGUNTAS FRECUENTES</p>
                     </div>
-                    <div class = "seccion_contenido" id="seccion_contenido">
+                    <div class = "contenido_main" id="contenido_main">
                     </div>
                 </section>
                 
-               <!-- <div id="sidebar">
-                    <img id = "imagen" src = "./images/fcefyn-logo.png">
+               <!-- <div id="barra_lateral_main">
+                    <img id = "imagen_barra_lateral" src = "./images/fcefyn-logo.png">
                 </div>-->
-
-                
 
             </main>
         </div>
     </body>
-
-    <script type="text/javascript"> 
-    /*
-    document.getElementById("bt_ingreso").onclick = function() {
-            mostrar_contenido("bt_ingreso","ingreso_cont");
-    }
-
-    document.getElementById("bt_cursado").onclick = function() {
-            mostrar_contenido("bt_cursado","cursado_cont");
-    }
-        
-        //Script ingenieria industrial
-        document.getElementById("bt_ing_inds").onclick = function() {
-            show_text("bt_ing_inds","ing_ind_cont");
-        }
-
-        //Script ingenieria en computacion
-        document.getElementById("bt_ing_comp").onclick = function() {
-            show_text("bt_ing_comp","ing_comp_cont");
-        }
-
-        //Script profesorado en ciencias biologicas
-        document.getElementById("bt_prof_biol").onclick = function() {
-            show_text("bt_prof_biol","prof_biol_cont");
-        }
-
-        //Script ciencias biologicas
-        document.getElementById("bt_cien_biol").onclick = function() {
-            show_text("bt_cien_biol","cien_biol_cont");
-        }
-
-        //Script ciencias geologicas
-        document.getElementById("bt_cien_geo").onclick = function() {
-            show_text("bt_cien_geo","cien_geo_cont");
-        }
-
-        //Script ingenieria en agrimensura
-        document.getElementById("bt_ing_agr").onclick = function() {
-            show_text("bt_ing_agr","ing_agr_cont");
-        }
-
-        //Script ingenieria aeronautica
-        document.getElementById("bt_ing_aer").onclick = function() {
-            show_text("bt_ing_aer","ing_aer_cont");
-        }
-        
-        //Script ingenieria biomedica
-        document.getElementById("bt_ing_bio").onclick = function() {
-            show_text("bt_ing_bio","ing_bio_cont");
-        }
-
-        //Script constructor
-        document.getElementById("bt_cons").onclick = function() {
-            show_text("bt_cons","cons_cont");
-        }
-
-        //Script Ingenieria ambiental
-        document.getElementById("bt_ing_amb").onclick = function() {
-            show_text("bt_ing_amb","ing_amb_cont");
-        }
-
-        //Script Ingenieria civil
-        document.getElementById("bt_ing_civ").onclick = function() {
-            show_text("bt_ing_civ","ing_civ_cont");
-        }
-
-        //Script Ingenieria electronica
-        document.getElementById("bt_ing_ele").onclick = function() {
-            show_text("bt_ing_ele","ing_ele_cont");
-        }
-
-        //Script Ingenieria mecanica
-        document.getElementById("bt_ing_mec").onclick = function() {
-            show_text("bt_ing_mec","ing_mec_cont");
-        }
-
-        //Script Ingenieria electromecanica
-        document.getElementById("bt_ing_emec").onclick = function() {
-            show_text("bt_ing_emec","ing_emec_cont");
-        }
-
-        //Script Ingenieria quimica
-        document.getElementById("bt_ing_quim").onclick = function() {
-            show_text("bt_ing_quim","ing_quim_cont");
-        }
-
-        //Script Tecnico mecanico electricista
-        document.getElementById("bt_tec_mec").onclick = function() {
-            show_text("bt_tec_mec","tec_mec_cont");
-        }
-
-
-        function show_text(bt_id, comp_id){
-            let contenido = ["ing_ind_cont","ing_comp_cont","prof_biol_cont","cien_biol_cont","cien_geo_cont","ing_agr_cont","ing_aer_cont"];
-            let botones = ["bt_ing_inds","bt_ing_comp","bt_prof_biol","bt_cien_biol","bt_cien_geo","bt_ing_agr","bt_ing_aer"];
-            var x = document.getElementById(comp_id)
-            
-            if (window.getComputedStyle(x).display === "none") {
-                for (i in contenido) {
-                    if(contenido[i] !== comp_id){
-                        document.getElementById(contenido[i]).style.display = "none";
-                        
-                    }
-                }
-                for (i in botones) {
-                    if(botones[i] !== bt_id){
-                        document.getElementById(botones[i]).style.borderBottomWidth = "1px"
-                        document.getElementById(botones[i]).style.borderBottomLeftRadius = "3px";
-                        document.getElementById(botones[i]).style.borderBottomRightRadius = "3px";
-                    }
-                }
-                x.style.display = "inline-block"
-                document.getElementById(bt_id).style.borderBottomWidth = "0px"
-                document.getElementById(bt_id).style.borderBottomLeftRadius = "0px";
-                document.getElementById(bt_id).style.borderBottomRightRadius = "0px";
-            }else{
-                x.style.display = "none"
-                document.getElementById(bt_id).style.borderBottomWidth = "1px"
-                document.getElementById(bt_id).style.borderBottomLeftRadius = "3px";
-                document.getElementById(bt_id).style.borderBottomRightRadius = "3px";
-            }
-            
-        }
-
-        function change_html(enlace){
-            window.location.href = enlace;
-        }
-        
-        function mostrar_contenido(bt_id, comp_id){
-            let contenido = ["ingreso_cont","cursado_cont"];
-            let botones = ["bt_ingreso","bt_cursado"];
-            var componente = document.getElementById(comp_id)
-
-            var x = document.getElementById(comp_id)
-            
-            if (window.getComputedStyle(x).display === "none") {
-                for (i in contenido) {
-                    if(contenido[i] !== comp_id){
-                        document.getElementById(contenido[i]).style.display = "none";
-                        
-                    }
-                }
-                for (i in botones) {
-                    if(botones[i] !== bt_id){
-                        document.getElementById(botones[i]).style.borderBottomWidth = "1px"
-                        document.getElementById(botones[i]).style.borderBottomLeftRadius = "3px";
-                        document.getElementById(botones[i]).style.borderBottomRightRadius = "3px";
-                    }
-                }
-                x.style.display = "inline-block"
-                document.getElementById(bt_id).style.borderBottomWidth = "0px"
-                document.getElementById(bt_id).style.borderBottomLeftRadius = "0px";
-                document.getElementById(bt_id).style.borderBottomRightRadius = "0px";
-            }else{
-                x.style.display = "none"
-                document.getElementById(bt_id).style.borderBottomWidth = "1px"
-                document.getElementById(bt_id).style.borderBottomLeftRadius = "3px";
-                document.getElementById(bt_id).style.borderBottomRightRadius = "3px";
-            }
-
-        }*/
-
-    </script>
-
-
-
-
-
-
 
 
 </html>

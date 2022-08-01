@@ -4,6 +4,7 @@ let contenidos_hijos  = [];
 let secciones_padres = [];
 let botones_padres  = [];
 let contenidos_padres  = [];
+let  menu_lateral = false;
 
 
 function incluir_seccion_padre(id_seccion, nombre_seccion){
@@ -19,7 +20,7 @@ function incluir_seccion_padre(id_seccion, nombre_seccion){
         </button>
         <div class = seccion_parrafo id= ${nombre_contenido}>
         </div>`;
-    document.getElementById("seccion_contenido").appendChild(div_seccion);
+    document.getElementById("contenido_main").appendChild(div_seccion);
     secciones_padres.push(id_seccion);
     botones_padres.push(nombre_boton);
     contenidos_padres.push(nombre_contenido);
@@ -127,20 +128,23 @@ function show_text_padre(id_seccion){
 
 }
 
+function mostrar_menu_lateral(){
+    if(menu_lateral){
+        document.getElementById("menu_div_smartphone").style.display="none";
+        menu_lateral = false;
+        document.getElementById("boton_menu_smartphone").innerHTML = `   
+        Menú`;
+
+    }else{
+        document.getElementById("menu_div_smartphone").style.display="flex";
+        menu_lateral = true;
+        document.getElementById("boton_menu_smartphone").innerHTML = `   
+        Ocultar`;
+    }
+}
+
 
 function incluir_funcion_botones(){
-
-    /*for(i in botones_hijos){
-        document.getElementById(botones_hijos[i]).onclick = function() {
-            show_text_hijo(secciones_hijos[i]);
-        }
-    }
-
-    for(i in botones_padres){
-        document.getElementById(botones_padres[i]).onclick = function() {
-            show_text_padre(secciones_padres[i]);
-        }
-    }*/
 
     document.getElementById("ingreso_bt").onclick = function() {
         show_text_padre("ingreso");
@@ -186,6 +190,20 @@ function incluir_funcion_botones(){
         show_text_hijo("comision");
     }
 
+
+    document.getElementById("boton_menu_smartphone").onclick = function() {
+        mostrar_menu_lateral();
+    }
+
+    window.onresize = function(){
+        var anchoVentana = window.innerWidth;
+        if(anchoVentana >= 886){
+            document.getElementById("menu_div_smartphone").style.display="none";
+            menu_lateral = false;
+            document.getElementById("boton_menu_smartphone").innerHTML = `   
+            Menu`;
+        }
+    };
 
 }
 
