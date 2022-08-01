@@ -400,7 +400,7 @@ li{
 
 #root #menu_div_smartphone .boton_menu:hover {
     background-color: #00d2ff;
-    /*box-shadow: 0 0 10px #00d2ff, 0 0 40px #00d2ff, 0 0 80px #00d2ff;*/
+    box-shadow: 0 0 10px #00d2ff, 0 0 40px #00d2ff, 0 0 80px #00d2ff;
     color: #3a47d5;
     border: 0;
     border-radius: 10%;
@@ -450,7 +450,7 @@ li{
         display: flex;
     }
     
-    #root #header_smartphone .boton_menu{
+    #root #header_smartphone #boton_menu_smartphone{
         color: white;
         background: none;
         border: none;
