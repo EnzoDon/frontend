@@ -328,20 +328,20 @@ li{
 
 #root #menu_div_smartphone{
     box-sizing: border-box;
-    width: 35%;
-    height: fit-content;
-    background-color: var(--header-color);
+    /*width: 35%;*/
+    width: 100vw;
+    height: 100vh;
+    /*background-color: var(--header-color);*/
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    align-items: center;
+    /*align-items: center;*/
     align-content: center;
     position: absolute;
     top: 90px;
     left: 0px;
     margin-right: auto;
     display: none;
-
 }
 
 #root #menu_div_smartphone button{
@@ -350,7 +350,7 @@ li{
     color: var(--button-text-color);
     font-weight: lighter;
     font-weight: lighter;
-    width: 80%;
+    width: 100%;
     min-width: 80px;
     height: 40px;
     border: 0;
@@ -360,7 +360,7 @@ li{
     font-size: 17px;
     overflow: hidden;
     transition: 0.2s;
-    
+    opacity: 1;
     
 }
 
@@ -373,54 +373,24 @@ li{
     
 }
 
+#root #menu_div_smartphone .background_menu_div_smartphone{
+    background-color: var(--header-color);
+    opacity: 0.8;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+}
 
+#root #menu_div_smartphone .botones_meu_div_smartphone{
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    width: 35%;
+}
 
 /*--------------- Inicio seccion cambios segun tamanio pantalla ---------------*/
 
-/*
-
-@media(max-width: 1394px) {
-    #root header .menu_div button {
-        width: 15%;
-        min-width: 80px;
-        height: 40px;
-    }
-}
-
-@media(max-width: 885px) {
-    #root header {
-        flex-direction: column;
-        padding-block: 5vh;
-    }
-    #root header .logo_div {
-        align-self: center;
-        flex-direction: column;
-        width: 95%;
-        margin-bottom: 8px;
-    }
-    #root header .menu_div {
-        align-self: center;
-        flex-direction: column;
-        width: 95%;
-
-    }
-    #root header .menu_div button {
-        width: 100%;
-        height: 20px;
-        margin-block: 4px;
-    }
-    #root #logo{
-        padding-inline: 90px;
-    }
-    #main section {
-        width: 100%;
-    }
-    #main #barra_lateral_main {
-        width: 0%;
-    }
-}
-
-*/
 
 @media(max-width: 885px) {
 
