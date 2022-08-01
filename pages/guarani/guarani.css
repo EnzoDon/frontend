@@ -104,7 +104,7 @@ h1, h2,  h3, h4, h5, h6 {
    
 }
 
-#root header .menu_div button {
+#root header .menu_div .boton_menu {
     background-color: #001933;
     color: var(--button-text-color);
     font-weight: lighter;
@@ -120,7 +120,22 @@ h1, h2,  h3, h4, h5, h6 {
    
 }
 
-#root header .menu_div button:hover {
+#root header .menu_div #boton_pagina_actual{
+    background-color: #003063;
+    color: var(--button-text-color);
+    font-weight: lighter;
+    font-weight: lighter;
+    width: 15%;
+    min-width: 80px;
+    height: 40px;
+    border: 0;
+    border-radius: 2px;
+    font-size: 17px;
+    overflow: hidden;
+    transition: 0.2s;
+}
+
+#root header .menu_div .boton_menu:hover {
     background-color: #00d2ff;
     box-shadow: 0 0 10px #00d2ff, 0 0 40px #00d2ff, 0 0 80px #00d2ff;
     color: #3a47d5;
@@ -343,7 +358,7 @@ li{
     display: none;
 }
 
-#root #menu_div_smartphone button{
+#root #menu_div_smartphone .boton_menu{
     box-sizing: border-box;
     background-color: #001933;
     color: var(--button-text-color);
@@ -363,9 +378,29 @@ li{
     
 }
 
-#root #menu_div_smartphone button:hover {
+
+#root #menu_div_smartphone #boton_pagina_actual{
+    box-sizing: border-box;
+    background-color: #003063;
+    color: var(--button-text-color);
+    font-weight: lighter;
+    font-weight: lighter;
+    width: 100%;
+    min-width: 80px;
+    height: 40px;
+    border: 0;
+    border-radius: 2px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 17px;
+    overflow: hidden;
+    transition: 0.2s;
+    opacity: 1;
+}
+
+#root #menu_div_smartphone .boton_menu:hover {
     background-color: #00d2ff;
-    box-shadow: 0 0 10px #00d2ff, 0 0 40px #00d2ff, 0 0 80px #00d2ff;
+    /*box-shadow: 0 0 10px #00d2ff, 0 0 40px #00d2ff, 0 0 80px #00d2ff;*/
     color: #3a47d5;
     border: 0;
     border-radius: 10%;
@@ -391,6 +426,8 @@ li{
     right: 0;
 }
 
+
+
 /*--------------- Inicio seccion cambios segun tamanio pantalla ---------------*/
 
 
@@ -412,8 +449,24 @@ li{
     #root #header_smartphone{
         display: flex;
     }
+    
+    #root #header_smartphone .boton_menu{
+        color: white;
+        background: none;
+        border: none;
+        box-shadow: none;
+        line-height: 60px;
+        cursor: pointer;
+    }
 
+    #root #header_smartphone .icono-menu{
+        height: 3em;
+        width: 2em;
+        color: #fff;
+    }
 }
+
+
 
 
 /*Aquí debajo va el FOOTER*/
