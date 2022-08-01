@@ -86,12 +86,16 @@ function mostrar_menu_lateral(){
         menu_lateral = false;
         document.getElementById("boton_menu_smartphone").innerHTML = `   
         Menú`;
+        document.getElementById("contenido").style.height = "100%";
+        document.getElementById("contenido").style.overflow = "hidden";
 
     }else{
         document.getElementById("menu_div_smartphone").style.display="flex";
         menu_lateral = true;
         document.getElementById("boton_menu_smartphone").innerHTML = `   
         Ocultar`;
+        document.getElementById("contenido").style.height = "100vh";
+        document.getElementById("contenido").style.overflow = "hidden";
     }
 }
 
