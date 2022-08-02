@@ -252,9 +252,7 @@ h1, h2,  h3, h4, h5, h6 {
     color:#fff
     
 }
-#main section .contenido_main  .seccion_bt:hover {
-    
-   
+#main section .contenido_main  .seccion_bt:hover {   
     color: #001933;
     background-color: #93ffa1;
     border: 0;

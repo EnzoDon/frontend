@@ -7,7 +7,7 @@
 
         <link rel="stylesheet" href="./pages/preguntas/preguntas.css">
         <script src="./pages/preguntas/src/preguntas.js"></script>
-        
+        <link rel="icon" href="./pages/guarani/cursor/icono.png">
         <title>Preguntas Frecuentes</title>
     </head>
     <body onload="carga_inicial()">
@@ -27,7 +27,7 @@
                     <button class="boton_menu" onclick = "change_html('./carreras.html')">
                         Carreras   
                     </button>
-                    <button class="boton_menu">
+                    <button id ="boton_pagina_actual">
                         Preguntas Frecuentes   
                     </button>
                 </div>
@@ -36,7 +36,9 @@
             <header id="header_smartphone">
                 <div class="menu_div">
                     <button class="boton_menu" id="boton_menu_smartphone">
-                        Menú                    
+                        <svg class="icono-menu" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                        </svg>                    
                     </button>
                 </div>
                 <div class="logo_div">
@@ -46,18 +48,21 @@
             </header>
 
             <div class="menu_div" id="menu_div_smartphone">
-                <button class="boton_menu" onclick = "change_html('./home.html')">
-                    Home                    
-                </button>
-                <button class="boton_menu" onclick = "change_html('./index.html')">
-                    Guaraní   
-                </button>
-                <button class="boton_menu" onclick = "change_html('./carreras.html')">
-                    Carreras   
-                </button>
-                <button class="boton_menu">
-                    Preguntas Frecuentes   
-                </button>
+                <div class="background_menu_div_smartphone"></div>
+                <div class ="botones_meu_div_smartphone">
+                    <button class="boton_menu" onclick = "change_html('./home.html')">
+                        Home                    
+                    </button>
+                    <button id ="boton_pagina_actual">  
+                        Guaraní
+                    </button>
+                    <button class="boton_menu" onclick = "change_html('./carreras.html')">
+                        Carreras  
+                    </button>
+                    <button class="boton_menu" onclick = "change_html('./preguntas.html')">
+                        Preguntas Frecuentes   
+                    </button>
+                </div>
             </div>
 
 
@@ -65,7 +70,7 @@
 
 
             <main id="main">
-                <section>
+                <section id="contenido">
                     <div class="titulo_main">
                         <p>PREGUNTAS FRECUENTES</p>
                     </div>
@@ -78,6 +83,36 @@
                 </div>-->
 
             </main>
+
+
+            <script type="module" src = "https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js" > </script>
+            <script nomodule src="https://unpkg .com/ionicons@5.5.2/dist/ionicons/ionicons.js"> </script>
+            <footer>
+                <div class="waves">
+                    <div class="waves" id="waves1"></div>
+                    <div class="waves" id="waves2"></div>
+                    <div class="waves" id="waves3"></div>
+                    <div class="waves" id="waves4"></div>
+                </div>
+        
+                <ul class="social_icon">
+                    <li><a href="https://www.facebook.com/FCEFYN" target="_blank" rel="noopener noreferrer"><ion-icon name="logo-facebook"></ion-icon>
+                    </a></li>
+                    <li><a href="https://www.instagram.com/fcefyn_unc/?hl=es" target="_blank" rel="noopener noreferrer"><ion-icon name="logo-instagram"></ion-icon></a></li>
+                    <li><a href="https://www.linkedin.com/school/fcefyn/" target="_blank" rel="noopener noreferrer"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+                    <li><a href="https://github.com/EnzoDon/frontend.git" target="_blank" rel="noopener noreferrer"><ion-icon name="logo-github"></ion-icon></a></li>
+                </ul>
+                <ul class="menu">
+                <!--    <li><a href="">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Servicios</a></li>
+                    <li><a href="">Team</a></li>
+                    <li><a href="">Contact</a></li>-->
+                </ul>
+                <p>2022 Comision cero [ COMØ ] All Rights Reserveds</p>
+            </footer>
+
+
         </div>
     </body>
 
