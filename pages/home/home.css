@@ -218,6 +218,21 @@ h1, h2,  h3, h4, h5, h6 {
 #contenido details summary {
     list-style: none; /* ocultamos la flecha */
     cursor: pointer; /* cambia el cursor del puntero */
+    
+    
+    width: 100%;
+    height: 30px;
+    margin-block: 4px;
+    text-align:justify;
+    border: 1px solid var(--color-text);
+    border-radius: 3px;
+    margin-bottom: 0px;
+    font-size: 20px;
+    
+    background-color: #124F6E;
+
+    color:#fff
+}
 }
 
 #contenido details .imagenes-planos{
@@ -239,7 +254,25 @@ details .imagenes-planos:before,
   margin: 0;
   padding: 0;
 }
+#contenido details summary:hover {   
+    color: #001933;
+    background-color: #93ffa1;
+    border: 0;
+}
 
+#contenido .contenido_main  {
+    width: 100%;
+    background: #e4f1ff;
+    border: none;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 4px;
+    /*background: linear-gradient(90deg, #00d2ff 0%, #93ffa1 100%);*/
+   background: none;
+    transition: 0.2s;
+    font-size: 17px;
+    
+}
 
 /*Aquí debajo va el FOOTER*/
 footer {
