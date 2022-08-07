@@ -4,133 +4,131 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
+        <title>Home</title>
         <script src="https://kit.fontawesome.com/9eb45967b7.js"></script>
 
         <link rel="stylesheet" href="./pages/home/home.css">
-
-        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css"
-            integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ=="
-            crossorigin=""
-        />
-        
+        <script src="./pages/home/src/home.js"></script>
+        <link rel="icon" href="./pages/guarani/cursor/icono.png">
     </head>
-    <body>
+
+    <body onload="carga_inicial()">
         <div id="root">
-            <!-- component header -->
-            <header id="header">
-                <div class="logo-wrap">
+            <header id="header_desktop">
+                <div class="logo_div">
                     <div id="logo">COMØ</div>
                 </div>
-                <div class="nav-wrap">
-                    <button class="nav">
+                <div class="menu_div">
+                    <button id ="boton_pagina_actual">
                         Home
                     </button>
-                    <button class="nav">
+                    <button class="boton_menu" onclick = "change_html('./index.html')">
                         Guaraní
                     </button>
-                    <button class="nav">
+                    <button class="boton_menu" onclick = "change_html('./carreras.html')">
                         Carreras
                     </button>
-                    <button class="nav">
+                    <button class="boton_menu" onclick = "change_html('./preguntas.html')">
                         Preguntas Frecuentes
                     </button>
                 </div>
-                <!-- <button class="btn-icon">
-                    <i class="fa-solid fa-bars" id="menu-icon"></i>
-                </button> -->
             </header>
-              <h1>¡Bienvenidos!</h1>
-             <h2><u>Guìa del estudiantes</u></h2>
-             <h2>Noticias</h2>
-                 
-              
-            
-                       
-            
-                        <div class="section-other">
-            
-                            <ul>
-                          <img src="https://w3.fcq.unc.edu.ar/sites/default/files/styles/noticias/public/noticias/ingreso_2.jpg?itok=RAcMB_Am" alt="">
-                            </label></li>
-                                <li>Comision_cero@gmail.com</li>
-                                <li><a href="https://com0.netlify.app">Link compartir</a></li>
-            
-                            </ul>
-            
-                        </div>
-            
-            
-               
-            
-            <div>
-                <img src="imagen/PLANO DE LA FACULTAD .jpg" alt="">
 
-                <img src="imagen/PLANTA BAJA.jpg" alt="">
+
+            <header id="header_smartphone">
+                <div class="menu_div">
+                    <button class="boton_menu" id="boton_menu_smartphone">
+                        <svg class="icono-menu" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                        </svg>                   
+                    </button>
+                </div>
+                <div class="logo_div">
+                    <div id="logo">COMØ</div>
+                </div>
+
+            </header>
+
+            <div class="menu_div" id="menu_div_smartphone">
+                <div class="background_menu_div_smartphone"></div>
+                <div class ="botones_meu_div_smartphone">
+                    <button id ="boton_pagina_actual">
+                        Home
+                    </button>
+                    <button class="boton_menu" onclick = "change_html('./index.html')">
+                        Guaraní
+                    </button>
+                    <button class="boton_menu" onclick = "change_html('./carreras.html')">
+                        Carreras
+                    </button>
+                    <button class="boton_menu" onclick = "change_html('./preguntas.html')">
+                        Preguntas Frecuentes
+                    </button>
+                </div>
             </div>
-       
-                    <main id="main">
-                        <div id="sidebar">
-                            <div id="mapid"></div>
-                        </div>
-                        <section>
-                            <div class="section-header"> 
-                               
-                                <div class="search">
-                                    <i class="fa-solid fa-magnifying-glass"></i>
-                                </div>
-                            </div>
-            
-                        </section>
+
+            <main id="main">
+                <div id="vacio">
+                    <p class="titulo">¡Bienvenidos!<p>
+                    <p class="titulo">Guía de estudiantes</p>
+                </div>
+                <div id="contenido">
+                    <h1>¿Quiénes somos?</h1>
+                    <p>Somos un grupo de estudiantes de diferentes carreras que en el marco del programa Programando futuros desarrollamos esta pagina web para 
+                        ayudar a ingresantes y estudiantes durante el transcurso de su carrera.
+                    </p>
+                    <h1>¿Cómo esperamos ayudarte?</h1>
+                    <p>El inicio de una carrera universitaria es complejo y entre tantos cambios podemos llegar a agobiarnos, 
+                        en esta pagina podrás encontrar respuesta a muchas preguntas para que no se haga aun más complicado este
+                        nuevo arranque!
+                    </p>
+                    <p>Si sos ingresante, mucha suerte esta etapa será muy buena! Y si ya sos estudiante regular, vos podes!</p>
+                    <h1>Algunos mapas y planos utiles</h1>
+                    <p>Plano planta baja FCEFyN Sede Ciudad universitaria</p>
+                    <div id="imagenes">
+                        <img src="./pages/home/imagenes/Plano_planta_baja.jpg">
+                    </div>
+                    <p>Plano planta alta FCEFyN Sede Ciudad universitaria</p>
+                    <div id="imagenes">
+                        <img src="./pages/home/imagenes/Plano_planta_alta.jpg">
+                    </div>
+                    <p>Ubicación FCEFyN sede ciudad universitaria</p>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3404.2233269430726!2d-64.19366742036135!3d-31.435518205988682!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432a2f54d372bf1%3A0xf1d83ddc363cda16!2sFacultad%20de%20Ciencias%20Exactas%2C%20F%C3%ADsicas%20y%20Naturales%20(F.C.E.F.%20y%20N.)%20%5BSede%20Ciudad%20Universitaria%5D%20%7C%20U.N.C.!5e0!3m2!1ses-419!2sar!4v1659842264517!5m2!1ses-419!2sar" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <p>Ubicación FCEFyN sede centro</p>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3404.8350684668244!2d-64.19208898421167!3d-31.41866993063027!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432a2840a60cfbd%3A0x43794a1527fe7d1!2sFacultad%20de%20Ciencias%20Exactas%2C%20F%C3%ADsicas%20y%20Naturales%20(F.C.E.F.%20y%20N.)%20%5BSede%20Centro%5D%20%7C%20U.N.C.!5e0!3m2!1ses-419!2sar!4v1659842639267!5m2!1ses-419!2sar" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </main>
+
+            <script type="module" src = "https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js" > </script> 
+            <script nomodule src="https://unpkg .com/ionicons@5.5.2/dist/ionicons/ionicons.js"> </script>
+            <footer>
+                <div class="waves">
+                    <div class="waves" id="waves1"></div>
+                    <div class="waves" id="waves2"></div>
+                    <div class="waves" id="waves3"></div>
+                    <div class="waves" id="waves4"></div>
+                </div>
         
-                    </main>
+                <ul class="social_icon">
+                    <li><a href="https://www.facebook.com/FCEFYN" target="_blank" rel="noopener noreferrer"><ion-icon name="logo-facebook"></ion-icon>
+                    </a></li>
+                    <li><a href="https://www.instagram.com/fcefyn_unc/?hl=es" target="_blank" rel="noopener noreferrer"><ion-icon name="logo-instagram"></ion-icon></a></li>
+                    <li><a href="https://www.linkedin.com/school/fcefyn/" target="_blank" rel="noopener noreferrer"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+                    <li><a href="https://github.com/EnzoDon/frontend.git" target="_blank" rel="noopener noreferrer"><ion-icon name="logo-github"></ion-icon></a></li>
+                </ul>
+                <ul class="menu">
+                <!--    <li><a href="">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Servicios</a></li>
+                    <li><a href="">Team</a></li>
+                    <li><a href="">Contact</a></li>-->
+                </ul>
+                <p>2022 Comision cero [ COMØ ] All Rights Reserveds</p>
+            </footer>
         </div>
 
-          
-          
     </body>
-
-    <script>
-        //draw leaflet map
-        function drawMap(initialCoors, zoom) {
-            // Creating the map at the user location
-            var mymap = L.map('mapid').setView(initialCoors, zoom);
-
-            // Adding the map draw from Open Street Map
-            L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
-                attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
-            }).addTo(mymap);
-            // draw the markers
-        }
-
-        
-        // Promise for geolocation callback with the location the error loads the map in a foo position
-        navigator.geolocation.getCurrentPosition(
-            position => drawMap([position.coords.latitude, position.coords.longitude], 16),
-            () => drawMap([-27.47, -58.833], 14.83) 
-        );
-    </script>
-    <script>
-        //set sidebar dynamic height
-        var renderedMap = document.getElementById('sidebar');
-        var renderedHeader= document.getElementById('header');
-        var vh = document.getElementById('root').clientHeight;
-        console.log('vh\t' + vh)
-        console.log('renderedHeader.clientHeight\t' + renderedHeader.clientHeight)
-        console.log('vh - renderedHeader.clientHeight\t' + (vh - renderedHeader.clientHeight))
-        renderedMap.style.height = (vh - renderedHeader.clientHeight) + 'px';
-
-    </script>
-
-<script>
-function openNav(){
-	document.getElementById('mySidenav').style.width="250px";
-}
-
-function closeNav(){
-	document.getElementById("mySidenav").style.width="0";
-
-}
-</script>
-    <script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js" integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ==" crossorigin=""></script>
 </html>
+
+
+
