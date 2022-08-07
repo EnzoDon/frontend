@@ -215,17 +215,17 @@ h1, h2,  h3, h4, h5, h6 {
 
 /*Elemento desplegable de las imágenes de los planos y googlemaps*/
 
-#contenido details summary {
+#contenido details .detalles summary {
     list-style: none; /* ocultamos la flecha */
     cursor: pointer; /* cambia el cursor del puntero */
 }
 
-#contenido details #imagenes{
+#contenido .detalles .imagenes-planos{
   position: relative;
 }
 
-details #imagenes:before, 
-details #imagenes:after{
+.detalles .imagenes-planos:before, 
+.imagenes-planos:after{
   content: '';
   height: 100%;
   width: 100%;
