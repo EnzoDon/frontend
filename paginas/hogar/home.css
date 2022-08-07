@@ -213,10 +213,10 @@ h1, h2,  h3, h4, h5, h6 {
     margin-right:auto;
 }
 /*Elemento desplegable de las imágenes de los planos y googlemaps*/
-#main #contenido details {
+#contenido details {
     list-style: none;
 }
-#main #contenido details #imagenes{
+#contenido details #imagenes{
   position: relative;
 }
 
