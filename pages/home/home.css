@@ -215,7 +215,7 @@ h1, h2,  h3, h4, h5, h6 {
 
 /*Elemento desplegable de las imágenes de los planos y googlemaps*/
 
-#contenido .detalles {
+#contenido details summary {
     list-style: none; /* ocultamos la flecha */
     cursor: pointer; /* cambia el cursor del puntero */
 }
