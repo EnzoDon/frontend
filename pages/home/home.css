@@ -220,11 +220,11 @@ h1, h2,  h3, h4, h5, h6 {
     cursor: pointer; /* cambia el cursor del puntero */
 }
 
-#contenido .detalles .imagenes-planos{
+#contenido details .imagenes-planos{
   position: relative;
 }
 
-.detalles .imagenes-planos:before, 
+details .imagenes-planos:before, 
 .imagenes-planos:after{
   content: '';
   height: 100%;
@@ -233,7 +233,7 @@ h1, h2,  h3, h4, h5, h6 {
   left: 0;
   position: absolute;
 }
-.detalles img {
+.imagenes-planos img{
   width: 100%;
   height: 100%;
   margin: 0;
