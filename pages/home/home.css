@@ -212,7 +212,8 @@ h1, h2,  h3, h4, h5, h6 {
 #contenido iframe{
     width: 95vw;
     height: 80vh;
-    margin: 5px;
+
+    margin: 0px;
     margin-right:auto;
 }
 
