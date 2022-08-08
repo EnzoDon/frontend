@@ -474,6 +474,9 @@ footer .wave {
         width: 2em;
         color: #fff;
     }
+    #vacio .titulo{
+        font-size: 40px;
+    }
 }
 
 
