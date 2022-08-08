@@ -318,14 +318,16 @@ li{
     align-items: center;
     border: none;
     text-align: center;
-    top: 20%;
-    position: relative;
+    /*top: 20%;
+    position: relative;*/
     overflow: auto;
     /*background: linear-gradient(90deg, #93ffa1ff 0%, #93ffa1 100%);*/
     background: none;
     overflow: hidden;
     opacity: 0.5;
     background: none;
+    align-self: flex-start;
+    justify-self: flex-start;
 }
 
 
@@ -333,9 +335,13 @@ li{
     /*width: n vw;
     height: 40%;*/
     object-fit: contain;
-    position: absolut;
+    /*position: absolute;*/
     /*background: linear-gradient(90deg, #00d2ff 0%, #93ffa1 100%);*/
     background: none;
+    width: 90%;
+    align-self: flex-start;
+    justify-self: flex-start;
+    padding-top: 30px;
    
 
 }
