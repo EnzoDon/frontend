@@ -52,11 +52,11 @@ function show_text(id_materia, link_img){
     var contenido = document.getElementById(nombre_contenido)
     
     if (window.getComputedStyle(contenido).display === "none") {
-        for (i in contenidos) {
-            if(contenidos[i] !== nombre_contenido){
+      /*  for (i in contenidos) {
+            (contenidos[i] !== nombre_contenido){
                 document.getElementById(contenidos[i]).style.display = "none";
             }
-        }
+        }*/
         for (i in botones) {
             if(botones[i] !== nombre_boton){
                 document.getElementById(botones[i]).style.borderBottomWidth = "1px"
@@ -68,13 +68,13 @@ function show_text(id_materia, link_img){
         document.getElementById(nombre_boton).style.borderBottomWidth = "0px"
         document.getElementById(nombre_boton).style.borderBottomLeftRadius = "0px";
         document.getElementById(nombre_boton).style.borderBottomRightRadius = "0px";
-        document.getElementById("imagen_barra_lateral").src= link_img;
+        //document.getElementById("imagen_barra_lateral").src= link_img;
     }else{
         contenido.style.display = "none"
         document.getElementById(nombre_boton).style.borderBottomWidth = "1px"
         document.getElementById(nombre_boton).style.borderBottomLeftRadius = "3px";
         document.getElementById(nombre_boton).style.borderBottomRightRadius = "3px";
-        document.getElementById("imagen_barra_lateral").src="./pages/carreras/images/fcefyn-logo.png";
+        //document.getElementById("imagen_barra_lateral").src="./pages/carreras/images/fcefyn-logo.png";
     }
     
 }
