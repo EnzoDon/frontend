@@ -39,6 +39,7 @@ body {
      gap: 40px;
      min-height: 100%;
      background: linear-gradient(90deg, #00d2ff 0%, #93ffa1 100%);
+     overflow-x: hidden;
 }
 
 body, input, button {
