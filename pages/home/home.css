@@ -217,10 +217,12 @@ h1, h2,  h3, h4, h5, h6 {
     margin-right:auto;
 }
 
-/*Elemento desplegable de las imágenes de los planos y googlemaps*/
+/*Elemento desplegable de las imágenes de los planos y googlemaps
+details summary 
+*/
 
 
-#contenido .contenido-planos-mapas {
+#contenido .contenido-planos-mapas details{
     box-sizing: border-box;
     width: 100%;
     height: fit-content;
