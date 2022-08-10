@@ -218,8 +218,10 @@ h1, h2,  h3, h4, h5, h6 {
 }
 
 /*Elemento desplegable de las imágenes de los planos y googlemaps*/
+ <div class="contenido-planos-mapas">
 
-#contenido details summary {
+#contenido .contenido-planos-mapas
+details summary {
     box-sizing: border-box;
     width: 100%;
     height: fit-content;
@@ -236,11 +238,12 @@ h1, h2,  h3, h4, h5, h6 {
 }
 
 
-#contenido details .imagenes-planos{
+#contenido .contenido-planos-mapas
+details .imagenes-planos{
   position: relative;
 }
 
-details .imagenes-planos:before, 
+.contenido-planos-mapas details .imagenes-planos:before, 
 .imagenes-planos:after{
   content: '';
   height: 100%;
@@ -255,7 +258,7 @@ details .imagenes-planos:before,
   margin: 0;
   padding: 0;
 }
-#contenido details summary:hover {   
+#contenido .contenido-planos-mapas details summary:hover {   
     color: #001933;
     background-color: #93ffa1;
     border: 0;
