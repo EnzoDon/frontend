@@ -73,13 +73,13 @@
                     <p class="titulo">Guía de estudiantes</p>
                 </div>
                 <div id="contenido">
-                        <button class="boton_contenido">¿Quiénes somos?</button>
-                        <div class="seccion_contenido">
+                        <button class="boton_contenido" id="quienes_somos_boton">¿Quiénes somos?</button>
+                        <div class="seccion_contenido" id="quinenes_somos_contenido">
                             <p>Somos un grupo de estudiantes de diferentes carreras que en el marco del programa Programando futuros, desarrollamos esta pagina web para 
                             ayudar a ingresantes y estudiantes durante el transcurso de su carrera.</p>
                         </div>
-                        <button class="boton_contenido">¿Cómo esperamos ayudarte?</button>
-                        <div class="seccion_contenido">
+                        <button class="boton_contenido" id="ayuda_boton">¿Cómo esperamos ayudarte?</button>
+                        <div class="seccion_contenido" id="ayuda_contenido">
                             <p>
                                 El inicio de una carrera universitaria es complejo y entre tantos cambios podemos llegar a agobiarnos, 
                                 en esta página podrás encontrar respuesta a muchas preguntas para que no se haga aun más complicado este
@@ -92,8 +92,8 @@
                             <p>Si sos ingresante, mucha suerte esta etapa será muy buena! Y si ya sos estudiante regular, vos podes!</p>    
                         </div>
 
-                        <button class="boton_contenido">¿Que necesito saber para Inscribirme a la carrera?</button>
-                        <div class="seccion_contenido">
+                        <button class="boton_contenido" id="inscripcion_boton">¿Que necesito saber para Inscribirme a la carrera?</button>
+                        <div class="seccion_contenido" id="inscripcion_contenido">
                             <p> 
                                 Hay mucha informacion sobre la facultad, que a los ingresantes puede marearlo, reconmendamos prestar atencion a lo siguiente:<br>
                                 La facultad tiene dos estancia de incripcion, una por primevera y otra en verano, hay grupos de estudiantes que crean grupo de wasap para ayudarlos.<br>
@@ -113,27 +113,27 @@
                             <a href="./guarani.html" target="_blank">¿Como inscribirme a la carrera</a>
                         </div>
 
-                        <button class="boton_contenido">Link útiles</button>
-                        <div class="seccion_contenido">
+                        <button class="boton_contenido" id="links_boton">Link útiles</button>
+                        <div class="seccion_contenido" id="links_contenido">
                             <p><a href="https://www.unc.edu.ar/" target="_blank">Pag de la UNC Ver</a><br></p>
                             <p><a href="https://fcefyn.aulavirtual.unc.edu.ar/login/index.php" target="_blank">Aula virtual de la facu</a><br></p>
                             <p><a href="https://autogestion.guarani.unc.edu.ar/" target="_blank">SIU guarani UNC</a><br></p>
                             <p><a href="https://fcefyn.unc.edu.ar/" target="_blank">Pag de la facu</a><br></p>
                         </div>
 
-                        <button class="boton_contenido">Algunos mapas y planos utiles</button>
-                        <div class="seccion_contenido">
-                            <button class="boton_seccion_contenido">Plano planta baja FCEFyN Sede Ciudad Universitaria</button>
+                        <button class="boton_contenido" id="mapas_boton">Algunos mapas y planos utiles</button>
+                        <div class="seccion_contenido" id="mapas_contenido">
+                            <button class="boton_seccion_contenido" id="planta_baja_boton">Plano planta baja FCEFyN Sede Ciudad Universitaria</button>
                             <div class="imagenes-planos" id="imagen_planta_baja">
                                 <img src="./pages/home/imagenes/Plano_planta_baja.jpg">
                            </div>
-                           <button class="boton_seccion_contenido">Plano planta baja FCEFyN Sede Ciudad Universitaria</button>
+                           <button class="boton_seccion_contenido" id="planta_alta_boton">Plano planta baja FCEFyN Sede Ciudad Universitaria</button>
                             <div class="imagenes-planos" id="imagen_planta_alta">
                                 <img src="./pages/home/imagenes/Plano_planta_baja.jpg">
                            </div>
-                           <button class="boton_seccion_contenido">Ubicación FCEFyN Sede Ciudad Universitaria</button>
+                           <button class="boton_seccion_contenido" id="mapa_sede_ciudad_boton">Ubicación FCEFyN Sede Ciudad Universitaria</button>
                            <iframe id="mapa_sede_ciudad" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3404.2233269430726!2d-64.19366742036135!3d-31.435518205988682!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432a2f54d372bf1%3A0xf1d83ddc363cda16!2sFacultad%20de%20Ciencias%20Exactas%2C%20F%C3%ADsicas%20y%20Naturales%20(F.C.E.F.%20y%20N.)%20%5BSede%20Ciudad%20Universitaria%5D%20%7C%20U.N.C.!5e0!3m2!1ses-419!2sar!4v1659842264517!5m2!1ses-419!2sar" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                           <button class="boton_seccion_contenido">Ubicación FCEFyN Sede Centro</button>
+                           <button class="boton_seccion_contenido" id="mapa_sede_centro_boton">Ubicación FCEFyN Sede Centro</button>
                            <iframe id="mapa_sede_centro" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3404.8350684668244!2d-64.19208898421167!3d-31.41866993063027!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432a2840a60cfbd%3A0x43794a1527fe7d1!2sFacultad%20de%20Ciencias%20Exactas%2C%20F%C3%ADsicas%20y%20Naturales%20(F.C.E.F.%20y%20N.)%20%5BSede%20Centro%5D%20%7C%20U.N.C.!5e0!3m2!1ses-419!2sar!4v1659842639267!5m2!1ses-419!2sar" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
                         </div>

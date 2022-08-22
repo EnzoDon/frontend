@@ -23,9 +23,46 @@ function mostrar_menu_lateral(){
     }
 }
 
+function mostrar_conntenido(id){
+    var contenido = document.getElementById(id)
+    if (window.getComputedStyle(contenido).display === "none") {
+        contenido.style.display = "inline-block";
+    }else{
+        contenido.style.display = "none";
+    }
+}
+
 function incluir_funcion_botones(){
     document.getElementById("boton_menu_smartphone").onclick = function() {
         mostrar_menu_lateral();
+    }
+    document.getElementById("quienes_somos_boton").onclick = function() {
+        mostrar_conntenido("quinenes_somos_contenido");
+    }
+    document.getElementById("ayuda_boton").onclick = function() {
+        mostrar_conntenido("ayuda_contenido");
+    }
+    document.getElementById("inscripcion_boton").onclick = function() {
+        mostrar_conntenido("inscripcion_contenido");
+    }
+    document.getElementById("links_boton").onclick = function() {
+        mostrar_conntenido("links_contenido");
+    }
+    document.getElementById("mapas_boton").onclick = function() {
+        mostrar_conntenido("mapas_contenido");
+    }
+
+    document.getElementById("planta_baja_boton").onclick = function() {
+        mostrar_conntenido("imagen_planta_baja");
+    }
+    document.getElementById("planta_alta_boton").onclick = function() {
+        mostrar_conntenido("imagen_planta_alta");
+    }
+    document.getElementById("mapa_sede_ciudad_boton").onclick = function() {
+        mostrar_conntenido("mapa_sede_ciudad");
+    }
+    document.getElementById("mapa_sede_centro_boton").onclick = function() {
+        mostrar_conntenido("mapa_sede_centro");
     }
 
     window.onresize = function(){

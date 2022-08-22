@@ -145,17 +145,17 @@ h1, h2,  h3, h4, h5, h6 {
     height: fit-content;
     display: flex;
     flex-direction: column;
-    background-image: url(./imagenes/ingreso_2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
     background-position: center center;
+    background-image: url(./imagenes/ingreso_2.jpg);
 }
 
 #main #vacio{
     width: 100vw;
     height: 100vh;
-    background-image: linear-gradient(rgb(83 255 169 / 20%) 40%,rgba(83,166,255,0));
+    /*background-image: linear-gradient(rgb(83 255 169 / 20%) 40%,rgba(83,166,255,0));*/
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -184,7 +184,6 @@ h1, h2,  h3, h4, h5, h6 {
     background: linear-gradient(90deg, #00d2ff 0%, #93ffa1 100%);
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-content: center;
     padding-top: 10px;
 }
@@ -203,6 +202,7 @@ h1, h2,  h3, h4, h5, h6 {
     margin-left: auto;
     margin-right: auto;
     padding: 4px;
+    margin-bottom: 5px;
 }
 
 .boton_contenido:hover {   
@@ -226,6 +226,7 @@ h1, h2,  h3, h4, h5, h6 {
         margin-left: auto;
         margin-right: auto;
         padding: 4px;
+        margin-bottom: 5px;
 }
     
 .boton_seccion_contenido:hover {   
@@ -244,6 +245,7 @@ h1, h2,  h3, h4, h5, h6 {
     flex-direction: column;
     justify-content: center;
     align-content: center;
+    display: none;
 }
 
 .seccion_contenido p{
@@ -255,6 +257,7 @@ h1, h2,  h3, h4, h5, h6 {
 
 
 iframe{
+    display: none;
     box-sizing: border-box;
     margin-top: 5px;
     margin-bottom: 5px;
@@ -262,6 +265,10 @@ iframe{
     height: 80vh;
 }
 
+
+.imagenes-planos{
+    display: none;
+}
 
 .imagenes-planos img{
     box-sizing: border-box;
