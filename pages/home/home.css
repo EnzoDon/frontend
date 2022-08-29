@@ -98,7 +98,7 @@ h1, h2,  h3, h4, h5, h6 {
 }
 
 #root header .menu_div #boton_pagina_actual{
-    background-color: #003063;
+    background-color: #1f4449;
     color: var(--button-text-color);
     font-weight: lighter;
     font-weight: lighter;
@@ -192,7 +192,8 @@ h1, h2,  h3, h4, h5, h6 {
     display: flex;
     flex-direction: column;
     align-content: center;
-    padding-top: 50px;
+    padding-top: 20px;
+    padding-bottom: 10px;
 }
 
 .boton_contenido{
@@ -270,6 +271,7 @@ h1, h2,  h3, h4, h5, h6 {
 {
     position: relative;
     display: flex;
+    flex-direction: row;
     justify-items: center;
     align-items: center;
     margin: 10px 0;
@@ -277,6 +279,12 @@ h1, h2,  h3, h4, h5, h6 {
     list-style: none;
     
 
+}
+
+.imagenes_de_iconos li{
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
 }
 .imagenes_de_iconos img{
     height: 150px;
@@ -410,7 +418,7 @@ footer .wave {
 
 #root #menu_div_smartphone .boton_menu{
     box-sizing: border-box;
-    background-color: #001933;
+    background-color: #2C5F66;
     color: var(--button-text-color);
     font-weight: lighter;
     font-weight: lighter;
@@ -430,7 +438,7 @@ footer .wave {
 
 #root #menu_div_smartphone #boton_pagina_actual{
     box-sizing: border-box;
-    background-color: #003063;
+    background-color: #1f4449;
     color: var(--button-text-color);
     font-weight: lighter;
     font-weight: lighter;
@@ -448,15 +456,15 @@ footer .wave {
 }
 
 #root #menu_div_smartphone .boton_menu:hover {
-    background-color: #00d2ff;
-    box-shadow: 0 0 10px #00d2ff, 0 0 40px #00d2ff, 0 0 80px #00d2ff;
-    color: #3a47d5;
+    background-color: #E8FCF3;
+    box-shadow: 0 0 10px #E8FCF3, 0 0 40px #E8FCF3, 0 0 80px #E8FCF3;
+    color: #000000;
     border: 0;
     border-radius: 10%;
     
 }
 #root #menu_div_smartphone .background_menu_div_smartphone{
-    background-color:  #2c3e50;
+    background-color:  #30494d;
     opacity: 0.95;
     width: 100%;
     height: 100%;
@@ -514,6 +522,13 @@ footer .wave {
     #vacio .titulo{
         font-size: 40px;
     }
+
+    #main #contenido{
+        padding-top: 10px;
+        padding-bottom: 5px;
+    }
+
+
 }
 
 
