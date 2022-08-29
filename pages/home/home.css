@@ -98,7 +98,7 @@ h1, h2,  h3, h4, h5, h6 {
 }
 
 #root header .menu_div #boton_pagina_actual{
-    background-color: #003063;
+    background-color: #1f4449;
     color: var(--button-text-color);
     font-weight: lighter;
     font-weight: lighter;
@@ -410,7 +410,7 @@ footer .wave {
 
 #root #menu_div_smartphone .boton_menu{
     box-sizing: border-box;
-    background-color: #001933;
+    background-color: #2C5F66;
     color: var(--button-text-color);
     font-weight: lighter;
     font-weight: lighter;
@@ -430,7 +430,7 @@ footer .wave {
 
 #root #menu_div_smartphone #boton_pagina_actual{
     box-sizing: border-box;
-    background-color: #003063;
+    background-color: #1f4449;
     color: var(--button-text-color);
     font-weight: lighter;
     font-weight: lighter;
@@ -448,9 +448,9 @@ footer .wave {
 }
 
 #root #menu_div_smartphone .boton_menu:hover {
-    background-color: #00d2ff;
-    box-shadow: 0 0 10px #00d2ff, 0 0 40px #00d2ff, 0 0 80px #00d2ff;
-    color: #3a47d5;
+    background-color: #E8FCF3;
+    box-shadow: 0 0 10px #E8FCF3, 0 0 40px #E8FCF3, 0 0 80px #E8FCF3;
+    color: #000000;
     border: 0;
     border-radius: 10%;
     
