@@ -192,7 +192,8 @@ h1, h2,  h3, h4, h5, h6 {
     display: flex;
     flex-direction: column;
     align-content: center;
-    padding-top: 50px;
+    padding-top: 20px;
+    padding-bottom: 10px;
 }
 
 .boton_contenido{
@@ -521,6 +522,13 @@ footer .wave {
     #vacio .titulo{
         font-size: 40px;
     }
+
+    #main #contenido{
+        padding-top: 10px;
+        padding-bottom: 5px;
+    }
+
+
 }
 
 
