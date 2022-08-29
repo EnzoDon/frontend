@@ -151,7 +151,9 @@ h1, h2,  h3, h4, h5, h6 {
     background-size: cover;
     background-attachment: fixed;
     background-position: center center;
-    background-image: url(./imagenes/ingreso_2.jpg);
+    background-image: url(https://elprofejose.files.wordpress.com/2014/12/recibsasiallaruldsc_9084_5.jpg?w=1140&h=761);
+    background-position: center 50px;
+  
 }
 
 #main #vacio{
@@ -207,6 +209,9 @@ h1, h2,  h3, h4, h5, h6 {
     margin-right: auto;
     padding: 4px;
     margin-bottom: 5px;
+    transition: 0.3s;
+    display: flex;
+  justify-content: center;
 }
 
 .boton_contenido:hover {   
@@ -250,6 +255,7 @@ h1, h2,  h3, h4, h5, h6 {
     justify-content: center;
     align-content: center;
     display: none;
+    transition: 0.3s;
 }
 
 .seccion_contenido p{
