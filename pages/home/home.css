@@ -270,6 +270,7 @@ h1, h2,  h3, h4, h5, h6 {
 {
     position: relative;
     display: flex;
+    flex-direction: row;
     justify-items: center;
     align-items: center;
     margin: 10px 0;
@@ -277,6 +278,12 @@ h1, h2,  h3, h4, h5, h6 {
     list-style: none;
     
 
+}
+
+.imagenes_de_iconos li{
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
 }
 .imagenes_de_iconos img{
     height: 150px;
