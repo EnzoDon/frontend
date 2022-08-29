@@ -543,7 +543,9 @@ footer .wave {
         padding-bottom: 5px;
     }
 
-
+    #calendario_contenido img{
+        width: 100%;
+    }
 }
 
 
