@@ -65,6 +65,10 @@ function incluir_funcion_botones(){
         mostrar_conntenido("mapa_sede_centro");
     }
 
+    document.getElementById("calendario_boton").onclick = function() {
+        mostrar_conntenido("calendario_contenido");
+    }
+
     window.onresize = function(){
         var anchoVentana = window.innerWidth;
         if(anchoVentana >= 886){

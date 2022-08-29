@@ -267,6 +267,20 @@ h1, h2,  h3, h4, h5, h6 {
     margin-bottom: 4px;
 }
 
+#calendario_contenido{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+
+}
+#calendario_contenido img{
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
 .imagenes_de_iconos
 {
     display: flex;
