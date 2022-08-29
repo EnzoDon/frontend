@@ -26,7 +26,7 @@ function mostrar_menu_lateral(){
 function mostrar_conntenido(id){
     var contenido = document.getElementById(id)
     if (window.getComputedStyle(contenido).display === "none") {
-        contenido.style.display = "inline-block";
+        contenido.style.display = "flex";
     }else{
         contenido.style.display = "none";
     }
