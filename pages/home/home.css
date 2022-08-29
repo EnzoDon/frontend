@@ -20,6 +20,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
 }
 
 
@@ -283,7 +284,12 @@ h1, h2,  h3, h4, h5, h6 {
     max-height: 200px;
     max-width: 200px;
     margin-inline: 20px;
+    transition: 0.5s;
 
+}
+.imagenes_de_iconos img:hover
+{
+    transform: translate(-10px);
 }
 iframe{
     display: none;
