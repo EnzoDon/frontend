@@ -61,6 +61,7 @@ h1, h2,  h3, h4, h5, h6 {
     justify-content: center;
     color: #E8FCF3;
     text-shadow: 0 0 10px #E8FCF3, 0 0 40px #E8FCF3, 0 0 80px #E8FCF3 ;
+    text-decoration: none;
  
 }
 
