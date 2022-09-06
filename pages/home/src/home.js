@@ -82,7 +82,7 @@ function incluir_funcion_botones(){
     };
 }
 
-function change_html(enlace) {
+function change_html(enlace){
     window.location.href = enlace;
 }
 

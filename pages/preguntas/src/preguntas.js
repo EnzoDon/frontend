@@ -160,46 +160,22 @@ function incluir_funcion_botones(){
     document.getElementById("ingreso_bt").onclick = function() {
         show_text_padre("ingreso");
     }
-    document.getElementById("pregunta_ingreso_bt").onclick = function() {
-        show_text_hijo("pregunta_ingreso");
-    }
-    document.getElementById("pregunta_ingresantes_extranjeros_bt").onclick = function() {
-        show_text_hijo("pregunta_ingresantes_extranjeros");
-    }
+
     document.getElementById("sec_incompleta_bt").onclick = function() {
         show_text_hijo("sec_incompleta");
-    }
-    document.getElementById("regimen_cursado_bt").onclick = function() {
-        show_text_hijo("regimen_cursado");
-    }
-    document.getElementById("acceder_materias_ingreso_bt").onclick = function() {
-        show_text_hijo("acceder_materias_ingreso");
-    }
-    document.getElementById("contenido_cursos_nivelacion_bt").onclick = function() {
-        show_text_hijo("contenido_cursos_nivelacion");
-    }
-    document.getElementById("horarios_cursos_nivelacion_bt").onclick = function() {
-        show_text_hijo("horarios_cursos_nivelacion");
-    }
-    document.getElementById("libre_curso_nivelacion_bt").onclick = function() {
-        show_text_hijo("libre_curso_nivelacion");
     }
     document.getElementById("asig_pend_secundario_bt").onclick = function() {
         show_text_hijo("asig_pend_secundario");
     }
-    document.getElementById("solicitar_pase_universidad_bt").onclick = function() {
-        show_text_hijo("solicitar_pase_universidad");
+    document.getElementById("promo_cineu_bt").onclick = function() {
+        show_text_hijo("promo_cineu");
     }
-    document.getElementById("pregunta_incripcion_otra_carrera_bt").onclick = function() {
-        show_text_hijo("pregunta_incripcion_otra_carrera");
+    document.getElementById("mod_cineu_bt").onclick = function() {
+        show_text_hijo("mod_cineu");
     }
-    document.getElementById("falla_subir_titulo_terciario_guarani_bt").onclick = function() {
-        show_text_hijo("falla_subir_titulo_terciario_guarani");
+    document.getElementById("falta_mod_cineu_bt").onclick = function() {
+        show_text_hijo("falta_mod_cineu");
     }
-    document.getElementById("falla_preinscripcion_bt").onclick = function() {
-        show_text_hijo("falla_preinscripcion");
-    }
-    
 
 
     document.getElementById("cursado_bt").onclick = function() {
@@ -221,7 +197,9 @@ function incluir_funcion_botones(){
     document.getElementById("cond_cursado_bt").onclick = function() {
         show_text_hijo("cond_cursado");
     }
-    
+    document.getElementById("comision_bt").onclick = function() {
+        show_text_hijo("comision");
+    }
 
 
     document.getElementById("boton_menu_smartphone").onclick = function() {
@@ -247,88 +225,33 @@ function carga_inicial(){
 
     incluir_seccion_padre("ingreso", "SOBRE EL INGRESO");
 
-    incluir_seccion_hijo("pregunta_ingreso", "¿Como me inscribo?","ingreso");
-    actualizar_parrafo("pregunta_ingreso",`
-    <p>Todo el proceso de inscripción se realizará de manera virtual. <a href="https://blogs.ffyh.unc.edu.ar/ingreso" target="_blank" rel="noopener">Aqui encontras un instructivo</a><br/></p> `);
-    incluir_seccion_hijo("pregunta_ingresantes_extranjeros","¿Cuál es el procedimiento si soy estudiante extranjero/a?" ,"ingreso")
-    actualizar_parrafo("pregunta_ingresantes_extranjeros",`
-    <p><a href="http://blogs.ffyh.unc.edu.ar/ingreso/2021/10/12/estudiantes-extranjeros-y-extranjeras/ target="_blank" rel="noopener""><strong>Aqui podras consultar</strong></a> las particularidades para estudiantes extranjeros y extranjeras</p>    `)
-
-    incluir_seccion_hijo("sec_incompleta", "Adeudo materias ¿me puedo inscribir?", "ingreso");
+    incluir_seccion_hijo("sec_incompleta", "Si no completé la escuela secundaria: ¿Puedo hacer la inscripción a la facultad?", "ingreso");
     actualizar_parrafo("sec_incompleta", `
-    <p>Si adeudas materias o todavía no tenes el analítico de finalización del secundario llenar igualmente los dos pasos de la inscripción y completa la Declaración Jurada de compromiso que te indica el formulario de inscripción. Tenes hasta el 30 de abril del 2022 para presentar la documentación adeudada.</p>
+    Sí, en ese caso, deberás traer una constancia de tu escuela donde se certifique que estás cursando el último año.
     `);
-    incluir_seccion_hijo("asig_pend_secundario", "¿Qué pasa si no aparece mi Título/Institución de Secundario?", "ingreso");
+    incluir_seccion_hijo("asig_pend_secundario", "¿Qué pasa si tengo asignaturas pendientes del nivel secundario?", "ingreso");
     actualizar_parrafo("asig_pend_secundario", `
-    <p>El título del secundario es un dato obligatorio que a futuro quedará reflejado en varias documentaciones que necesites, por lo que si no aparece comunicate con el Despacho de alumnxs a fin de<br />registrarlo. <a href="https://blogs.ffyh.unc.edu.ar/casaVerde/ingresantes/" target="_blank" rel="noopener">Clic auqí para ir al formulario</a></p>
+    Podés cursar como estudiante condicional hasta el 30 de abril, fecha límite para presentar el certificado que acredite que finalizaste los estudios secundarios y no adeudas materias.
     `);
-
-    incluir_seccion_hijo("regimen_cursado","¿Cual es el regimen de cursado?","ingreso")
-    actualizar_parrafo("regimen_cursado",`
-    <p>El curso de nivelación se realiza en formato presencial y podrás consultar el programa y los materiales de estudio a partir de diciembre del 2022. Todas las carreras ofrecen horario de cursado vespertino y únicamente las carreras de Antropología e Historia tienen también turno matutino. Nuestra Facultad ofrece protocolos de accesibilidad para personas en situación de discapacidad y tiene reglamentaciones especiales para estudiantes trabajadores y/o con familiar a cargo. Para más información mira la pestaña de Información General de este Blog. (subpestaña Régimen de asistencia a Clases)</p>
-    `)
-    
-    incluir_seccion_hijo("acceder_materias_ingreso","¿Como puedo acceder a las materias de ingreso?","ingreso")
-    actualizar_parrafo("acceder_materias_ingreso",`
-    <p>El material para el Ciclo Lectivo 2023 no estará disponible hasta finales de este año. Sin embargo, podes solicitar el que se está utilizando en este Ciclo 2022 (que puede llegar a modificarse para el próximo año). <br />Para adquirirlo virtualmente te recomendamos que te contactes con el Centro de Estudiantes y se los solicites: centrodelosestudiantes.ffyh@gmail.com (También podes escribirle a sus redes sociales en facebook e Instagram)</p>
-    `)
-
-    incluir_seccion_hijo("contenido_cursos_nivelacion","¿Cual es el contenido de los cursos de Nivelacion en las carreras?","ingreso")
-    actualizar_parrafo("contenido_cursos_nivelacion",`
-    <ol><li><strong>Primer Módulo:</strong> <br /><span style="color: #800080"><strong>Introducción a la  Vida Universitaria</strong> </span><br />Este módulo abordará los aspectos fundamentales de la vida en la Universidad Nacional de Córdoba y el derecho al acceso a la Educación Superior como manera de constitución de una identidad universitaria. Se trabajan contenidos referidos a las dinámicas propias de la UNC y la facultad, la alfabetización en temáticas relevantes social y académicamente. Entre ellos, temáticas que han  ido tomando relevancia a partir de las necesidades propias de los contextos sociales tales como  Derechos Humanos,   Género, Educación Sexual Integral y el aprendizaje en los entornos virtuales.</li>
-    <li><strong>Segundo Módulo<br /></strong><span style="color: #800080"><strong>Aportes teóricos-políticos feministas a los campos de conocimiento disciplinar</strong></span> <br />A partir de la Resolución Decanal 02/2020 se propone abordar contenidos de formación vinculados al Género y Educación Sexual Integral que provean herramientas teóricas de análisis y las vinculen con la formación disciplinar.</li>
-    <li><strong>Tercer Módulo</strong><br /><span style="color: #800080"><strong>Introducción a los estudios disciplinares</strong></span><br />Este momento es la introducción a los estudios propios de la disciplina que se articulan con el primer año del cursado de la carrera elegida. Esta instancia pretende brindar las primeras herramientas y conceptualizaciones centrales que acompañarán el cursado del/la estudiante a lo largo de la carrera. </li>
-    </ol> 
-    `)
-
-    incluir_seccion_hijo("horarios_cursos_nivelacion","¿Cuáles son los horarios de curso de nivelación por carrera?","ingreso")
-    actualizar_parrafo("horarios_cursos_nivelacion",`
-    <p>En diciembre se publicarán los horarios definitivos de todas las carreras. Te adelantamos que todas las carreras ofrecen horario de cursado vespertino y únicamente las carreras de Antropología e Historia tienen también turno matutino.</p>
-    `)
-    incluir_seccion_hijo("libre_curso_nivelacion","¿Es posible rendir el Curso de Nivelación de manera libre?","ingreso")
-    actualizar_parrafo("libre_curso_nivelacion",`
-    <p>Sí.</p>
-    <p>Para ello, necesitarás:</p>
-    <p>Estudiar todo el material de los tres módulos. Te sugerimos contactarte con las y los docentes a cargo del Curso de tu carrera o bien contactarte con ellos por correo electrónico desde el Aula Virtual para que te expliquen la modalidad del examen.<br />Inscribirte a través del Sistema Guaraní al examen en las fechas establecidas por Calendario Académico. La inscripción para poder rendir tiene fecha de vencimiento y suele ser varios días antes de la fecha de examen.</p>
-    <p>Si no aprobás dicho examen, en la mayoría de las carreras podés empezar a cursar materias luego de hacer la <strong>Matriculación anual</strong> y la inscripción en las <strong>materias de primer año</strong>. (para saber las correlatividades de las materias de la carrera que elegiste cursar comunícate con su Secretaría Técnica)</p>
-    <p>Pero deberás rendir y aprobar el Curso de Nivelación en los próximos turnos de exámenes del año 2023.</p>
-    `)
-
-    incluir_seccion_hijo("solicitar_pase_universidad","Voy a solicitar un Pase de Universidad ¿me tengo que preinscribir en Diciembre?","ingreso")
-   actualizar_parrafo("solicitar_pase_universidad",`
-   <p>No, en este caso tenés que iniciar un expediente por mesa de entrada en periodo habilitado por Calendario Academico. <a href="https://blogs.ffyh.unc.edu.ar/casaVerde/2021/02/10/procedimientos-para-solicitudes-de-pases-y-equivalencias/" target="_blank" rel="noopener"><strong>Clic aquí para realizar el trámite</strong></a></p>
-   `)
-
-   incluir_seccion_hijo("pregunta_incripcion_otra_carrera","Estoy cursando una carrera de la misma Escuela,  ejemplo: Licenciatura en Historia y ahora me quiero inscribir al Profesorado en Historia ¿tengo que realizar preinscripción nuevamente?", "ingreso" )
-   actualizar_parrafo("pregunta_incripcion_otra_carrera",`
-   <p>Al ser ya estudiante de una carrera de la misma Escuela de la FFyH-UNC no te tenes que preinscribir ahora, sino que tenés<br />que solicitar la inscripción en marzo del próximo año a <a href="https://blogs.ffyh.unc.edu.ar/casaVerde/ingresantes/" target="_blank" rel="noopener"><strong>Despacho de </strong></a><a href="https://blogs.ffyh.unc.edu.ar/casaVerde/ingresantes/" target="_blank" rel="noopener"><strong>alumnos. </strong></a></p>
-   `)
-    incluir_seccion_hijo("falla_subir_titulo_terciario_guarani","No puedo subir el certificado y título del terciario en Sistema Guaraní","ingreso")
-    actualizar_parrafo("falla_subir_titulo_terciario_guarani",`
-    <p>En este caso solamente se presenta por Formulario de la Etapa 2 de preinscripción.</p>
-    `)
-   incluir_seccion_hijo("falla_preinscripcion","¿Qué pasa si no completo las <strong>dos etapas obligatorias de preinscripción</strong>? (1º etapa por Sistema Guaraní y 2º etapa por formulario google)</span>","ingreso")
-   actualizar_parrafo("falla_preinscripcion",`
-   <p><span style="color: #ff00ff"><strong>Ambas etapas son obligatorias.</strong></span> Si una de ellas está completa, <strong>no quedarás inscripte en la carrera</strong>. Por ello es importante que <span style="color: #ff00ff"><strong>verifiques</strong></span> en tu <em>bandeja de entrada, spam o correo no deseado</em> <strong>si te ha llegado la notificación del comprobante del formulario Google con tus respuestas,</strong> para estar segure de que completaste todos los pasos. </p>
-   <p>En el mes de Diciembre, Despacho de alumnxs procesará tu solicitud y enviará -al correo informado-, el comprobante con la inscripción a la carrera y al curso de nivelación. </p>
-   <p>En el mes de Marzo, Despacho de Alumnxs, te citará con turno específico para realizar la Matrícula Definitiva y la habilitación de libreta de estudiantes; en este momento se corrobora la documentación original<br />presentada en la preinscripción.</p> 
-   `)
-   
+    incluir_seccion_hijo("promo_cineu", "¿Puedo aprobar una asignatura del CINEU por promoción y rendir las otras en los exámenes generales?", "ingreso");
+    actualizar_parrafo("promo_cineu", `
+    Sí. Es muy frecuente que nuestros estudiantes aprueben algunas asignaturas por promoción y otras en los exámenes finales. Viene bien un ejemplo. Supongamos que te anotás para Matemática y Ambientación Universitaria, en la Modalidad Primavera y promocionas sólo una de esas asignaturas, entonces podés rendir la otra en cualquiera de los exámenes finales. Otra posibilidad es cursar de nuevo la asignatura no aprobada, en la Modalidad Verano
+   `);
+   incluir_seccion_hijo("mod_cineu", "¿Puedo aprobar las asignaturas del CINEU, sin haber cursado en cualquiera de las dos modalidades?", "ingreso");
+   actualizar_parrafo("mod_cineu", `
+   Sí. El cursado de las asignaturas del CINEU no es obligatorio. En el caso de no cursar algunas de las asignaturas del CINEU podrás rendirlas en un examen final si te inscribes en él.
+   `);
+   incluir_seccion_hijo("falta_mod_cineu", "¿Si me anoto para la Modalidad Primavera en alguna asignatura y después no hago nada: ¿pierdo la oportunidad de cursar la materia en la Modalidad Verano?", "ingreso");
+   actualizar_parrafo("falta_mod_cineu", `
+   No. No hay restricciones de ese tipo. En caso de no aprobar alguna asignatura en la Modalidad Primavera tenés que volver a inscribirte para cursar esas asignaturas en la Modalidad Verano.
+   `);
 
 
    incluir_seccion_padre("cursado", "SOBRE EL CURSADO");
 
    incluir_seccion_hijo("promocion", "¿Qué es promocionar? ¿Qué significa?", "cursado");
    actualizar_parrafo("promocion", `
-   Se denomina promoción haber cumplido todas las condiciones presentadas en el programa de una catedra en particular.<br>
-   En general las condiciones de promocion son:
-    <ul>
-    <li> Asitir a mas del 80% de las clases de trabajos practicos. </li>
-    <li> Haber aprobado el 80% de los trabajos practicos con un promedio de 7.</li>
-    <li> Haber aprobado los dos parciales con un promedio de 7.</li>
-    <li> Aunque hay catedras que tienen requisitos particulares para acreditar la promocion, como talleres y seminarios. </li>
-    </ul>
-    Al finalizar el cuatrimestre o la catedra, se evaluan los contenidos que se dieron en el cursado, acreditar la condicion de promocion, en algunos casos te exhime de rendir o el contenido es menor a quien tiene que rendir la evaluacion con condicion de regular.
+   Se denomina promoción a la posibilidad de aprobar una asignatura mediante la realización de exámenes parciales. Para promocionar una asignatura del CINEU deberás tener aprobadas las dos evaluaciones parciales de esa materia.
    `);
 
 
@@ -337,34 +260,25 @@ function carga_inicial(){
    El primer paso para ingresar a la UNC es realizar la preinscripcion a la carrera que hayas elegido en la facultad o escuela correspondiente. La preinscripcion se realiza entre fines de noviembre y comienzos de diciembre, pero tenes que confirmar la fecha especifica que te corresponde en cada Facultad o Escuela.
    `);
 
-   incluir_seccion_hijo("becas", " ¿Cursar en la FFyH tiene algún costo?¿Existen becas? ", "cursado");
+   incluir_seccion_hijo("becas", " ¿Hay alguna beca cursando la facultad?", "cursado");
    actualizar_parrafo("becas", `
-   <p>Sostenemos el derecho a una educación gratuita, laica y de calidad. Por ello, nuestras carreras no tienen costo. Además, para acompañarte en tu acceso a la Educación Superior existen diferentes políticas de ayuda económica u orientadas a disminuir el gasto en apuntes, comida, transporte, etc.</p>
-<p>Se trata de políticas impulsadas por diferentes organismos y en consecuencia difieren en requisitos y en sus períodos de convocatoria. A toda la información de cada convocatoria podés encontrarla en <a href="https://ffyh.unc.edu.ar/sae/">https://ffyh.unc.edu.ar/sae/</a> en la solapa <b>becas</b>. </p>
-<p><strong>Estas son:</strong></p>
-<ul>
-<li><b>Beca PROGRESAR: </b>Son becas económicas destinadas a ingresantes de entre 18 y 24 años, aunque sin límite de edad para personas que pertenezcan a algún grupo de vulnerabilidad. A la inscripción debés realizarla de manera totalmente online, durante el período en que se encuentra abierta: generalmente el mes de febrero, y a partir de 2021, hay una segunda convocatoria al inicio del 2do semestre de cursado. Debés cumplir requisitos económicos que se certificarán a partir de la base del ANSES, y académicos, una vez que avances en la cursada.</li>
-<li><b>Beca Manuel Belgrano</b>: Para estudiantes de la carrera de Geografía, se trata de una beca estímulo a carreras de carácter estratégico, de características similares a la PROGRESAR pero de monto mensual más alto.</li>
-<li><b>Becas de ingresantes: </b>Es una beca económica sin límite de edad cuya inscripción se tramita de manera online y luego se complementa en una entrevista. Se solicita en la primera quincena de octubre. Luego de ingresar a la Universidad podés continuar percibiendo una beca similar solicitando la <b>beca de fondo único</b>. Podés inscribirte aquí: <a href="https://www.unc.edu.ar/vida-estudiantil/becas-ingresantes-unc-2021">https://www.unc.edu.ar/vida-estudiantil</a> </li>
-</ul>
-<p> </p>
-<p><span style="color: #003d99"><strong>A partir de los meses de marzo/abril podés acceder a las siguientes herramientas:</strong></span></p>
-<ul>
-<li><b>Beca de conectividad:</b> Mientras se sostenga el cursado virtual, podés solicitar esta beca en caso de que no cuentes con wifi en tu hogar. Obtendrás una cantidad de datos mensuales para navegar desde tu celular.</li>
-<li><b>Beca de comedor: </b>Mientras el Comedor Universitario permanezca cerrado, esta beca se llama Nutrirse y consiste en módulos de alimentos para que puedas llevar a tu domicilio.</li>
-</ul>
-<ul>
-<li><b>Punto SAE Conecta: </b>A partir de que ingreses a la Universidad, cada vez que necesites utilizar una pc con acceso a internet, podés acercarte al punto SAE Conecta en ciudad universitaria. Debés reservar turnos de manera online.</li>
-</ul>
-<ul>
-<li><b>Beca de la SAE de la FFyH: </b>Beca de apuntes: Esta beca tiene como objetivo entregar los apuntes de una o más materias a las y los estudiantes que tengan dificultades para comprarlos. La inscripción se realiza online, y asigna grupos de prioridad.
-<p>Para el caso de los apuntes del Curso de Nivelación, esta beca se le otorga a las personas que tienen <b>beca de ingresantes</b>.</p>
-</li>
-</ul>
-<p><b></b></p>
-<ul>
-<li><b> Boleto Educativo Gratuito: </b>Cuando retornemos a la actividad presencial de carreras de grado, podrás volver a obtener el Boleto Educativo Gratuito, a partir del inicio del primer semestre (marzo).</li>
-</ul>
+   Si. Durante el período de cursado de la carrera el estudiante puede tramitar las siguientes
+   becas:
+   <ul>
+   <li>Becas de comedor universitario</li>
+   <li>Becas de deporte </li>
+   <li>Becas para ingresantes</li>
+   <li>Becas Conectividad</li>
+   <li>Becas para alumnos de 2do año en adelante </li>
+   <li>Becas Manuel Belgrano</li>
+   <li>Becas de la Fundación Roberto Roca</li>
+   <li>Becas Fundacion Tarpuy</li>
+   <li>Becas Superior de Cilsa</li>
+   <li>Beca Escalar Líderes</li>
+   <li>Boleto educativo </li>
+   <li>Plan Progresar</li>
+   <li>Fundación Retama</li>
+    </ul>
    `);
 
 
@@ -382,6 +296,16 @@ function carga_inicial(){
     </ul>
    `);
 
+
+   incluir_seccion_hijo("comision", "¿Cómo saber en qué comisión estoy?", "cursado");
+   actualizar_parrafo("comision", `
+   <ul>
+   <li>1.Ingresar a Guaraní.</li>
+   <li>2. Ir a la pestaña de reportes.</li>
+   <li>3. Seleccionar	pestaña de mis inscripciones.</li>
+   <li>4. En la columna de comisiones podrás encontrar la tuya.	</li>
+    </ul>
+    `);
 
 
     incluir_funcion_botones();
